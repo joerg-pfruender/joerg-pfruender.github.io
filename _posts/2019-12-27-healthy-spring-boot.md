@@ -2,7 +2,6 @@
 layout: post
 title:  "healthy spring boot"
 date:   2019-12-22 08:54:31 +0100
-categories: jekyll update
 categories: [software, microservice]
 tags: [spring, boot, health, http, forward]
 ---
