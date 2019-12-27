@@ -6,9 +6,13 @@ categories: [software, testing, microservices]
 tags: [microservices, testing]
 ---
 
-On February 2017 I gave a talk at [microxchg.io](http://microxchg.io).
+![Unknown Error](/assets/unknown_error.png)
 
-# [Three important data points for every request and every message (Video)](https://youtu.be/NOKzekgD2C4)
+On February 2017 I gave a talk at [microxchg.io&#8599;](http://microxchg.io).
+
+# [Three important data points for every request and every message (Video)&#8599;](https://youtu.be/NOKzekgD2C4)
+
+# [Slides&#8599;](https://speakerdeck.com/joergpfruender/three-important-data-points-for-every-request-and-every-message)
 
 
 *Any comments or suggestions? Leave an issue or a pull request!*

@@ -32,12 +32,12 @@ Immer als erstes: Kritik unter vier Augen.
 Wenn das nichts bringt, ist die nächste Eskalationsstufe: Einen unbeteiligten, neutralen Dritten zum Gespräch hinzuziehen.
 Erst wenn das nichts bringt, die letzte Eskalationsstufe: Die Kritik vor der ganzen Gruppe vorbringen.
 
-[Matthäus 18, 15-17](http://www.bibleserver.com/text/LUT/Matth%C3%A4us18%2C15)
+[Matthäus 18, 15-17&#8599;](http://www.bibleserver.com/text/LUT/Matth%C3%A4us18%2C15)
 
 
 ### 4.) Benutze die 4 Schritte der Gewaltfreien Kommunikation (Marshall B. Rosenberg)
 
-[https://de.wikipedia.org/wiki/Gewaltfreie_Kommunikation](https://de.wikipedia.org/wiki/Gewaltfreie_Kommunikation)
+[https://de.wikipedia.org/wiki/Gewaltfreie_Kommunikation&#8599;](https://de.wikipedia.org/wiki/Gewaltfreie_Kommunikation)
 
 Am besten du kaufst dir ein Buch darüber oder besuchst ein Seminar. Daher hier nur die Kurzversion:
 
@@ -157,7 +157,7 @@ Zum Schluß ein Zitat von Timothy Keller:
 
 > Don't let failure go to your heart.
 
-[@timkellernyc](https://twitter.com/timkellernyc) 3. Dezember 2015
+[@timkellernyc&#8599;](https://twitter.com/timkellernyc) 3. Dezember 2015
 
 
 *Any comments or suggestions? Leave an issue or a pull request!*

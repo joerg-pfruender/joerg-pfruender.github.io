@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "healthy spring boot"
+title:  "Spring Boot: Forward health endpoint to another url"
 date:   2019-12-22 08:54:31 +0100
 categories: [software, microservice]
 tags: [spring, boot, health, http, forward]
@@ -10,9 +10,9 @@ I love standards. Every time you onboard on a new company you will appreciate st
 I dislike the "not invented here" syndrome. Have you ever heard: "Yes, usually you do it like this but here in our company we do it like that."?
 Then you will know!
 
-A `health` endpoint is a de-facto standard in microservices. In our environment it should be accessable via `/health`, like in [IBMs Healthcheck Tutoral](https://cloud.ibm.com/docs/node?topic=nodejs-node-healthcheck), like it is in Spring Boot 1.x
+A `health` endpoint is a de-facto standard in microservices. In our environment it should be accessable via `/health`, like in [IBMs Healthcheck Tutoral&#8599;](https://cloud.ibm.com/docs/node?topic=nodejs-node-healthcheck), like it is in Spring Boot 1.x
 
-But in Spring Boot 2.x they moved the default health endpoint to `/actuator/health`. There are plenty of tutorials on how to move the endpoints of the actuator plugin to any other urls. But where will a new employee try to find them? On `/health` or on `/actuator/health`? 
+But in Spring Boot 2.x they moved the default health endpoint to `/actuator/health`. There are plenty of tutorials on how to move the endpoints of the [actuator plugin&#8599;](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html) to any other urls. But where will a new employee try to find them? On `/health` or on `/actuator/health`? 
 
 **Can't we just provide both endpoints?**
 
@@ -24,8 +24,8 @@ A redirect will send an HTTP 30x, but I guess most health checks will just suppo
 
 ### Forward
 
-* Using [spring mvc's forward prefix](https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/forward-prefix.html) simply just didn't work. I guessed the reason is: This technology only works inside of spring mvc and that actuator does not use spring mvc. But I did not dig much deeper into it.
-* [Servlet Context forward](https://www.baeldung.com/servlet-redirect-forward) seemed the most promising path. But it resulted in a **NoSuchMethodError**!
+* Using [spring mvc's forward prefix&#8599;](https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/forward-prefix.html) simply just didn't work. I guessed the reason is: This technology only works inside of spring mvc and that actuator does not use spring mvc. But I did not dig much deeper into it.
+* [Servlet Context forward&#8599;](https://www.baeldung.com/servlet-redirect-forward) seemed the most promising path. But it resulted in a **NoSuchMethodError**!
 
         java.lang.NoSuchMethodError: javax.servlet.http.HttpServletRequest.getHttpServletMapping()Ljavax/servlet/http/HttpServletMapping;
             at org.apache.catalina.core.ApplicationHttpRequest.setRequest(ApplicationHttpRequest.java:708) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
