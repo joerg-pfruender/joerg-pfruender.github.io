@@ -11,7 +11,7 @@ tags: [docker, localstack, sns, sqs, testing]
 ## REST vs. Messaging in Microservices
 
 If you have a microservice architecture, you hopefully do not rely on REST only for inter-service communications.
-If you only use HTTP and REST for inter-service communication you might end up with problems because latency and error probability will add up with every hop of your synchronous communication. In the beginning you won't realize it, but it will kill you in the end.
+If you only use HTTP and REST for inter-service communication you might end up with problems because latency and error probability will add up with every hop of your synchronous communication. In the beginning you won't realize it, but it will kill your system in the end.
 
 You hopefully use some kind of asynchronous communication, maybe messaging.
 And if you use messaging on the Amazon AWS Cloud you most likely use SNS and SQS.
@@ -183,7 +183,7 @@ We just need to create a shell script now.
             echo "$(get_all_queues)"
 
 
-When you look at the code, you will see that bash scripting is not my programming mother tongue. I'm more a java guy. So if you have some improvements, I will be happy.
+When you look at the code, you will see, that bash scripting is not my programming mother tongue. I'm more a java guy. So if you have some improvements, I will be happy.
 
 ## One more thing
 
