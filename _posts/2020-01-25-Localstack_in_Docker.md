@@ -19,7 +19,7 @@ And if you use messaging on the Amazon AWS Cloud you most likely use SNS and SQS
 ## Collaboration Testing including SNS/SQS
 
 But how can you test your microservices including the communication in your CI/CD-Pipeline?
-Your build should not rely on internet connections, so you should connect to the AWS Cloud during your CI-Tests. 
+Your build should not rely on internet connections, so you should not connect to the AWS Cloud during your CI-Tests. 
 
 ### localstack inside docker
 Here comes [localstack&#8599;](https://localstack.cloud/) ([Github&#8599;](https://github.com/localstack/localstack))
