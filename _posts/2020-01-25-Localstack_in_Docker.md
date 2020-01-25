@@ -8,7 +8,7 @@ tags: [docker, localstack, sns, sqs, testing]
 
 ![Time](/assets/messages.jpg)
 
-##### REST vs. Messaging in Microservices
+## REST vs. Messaging in Microservices
 
 If you have a microservice architecture, you hopefully do not rely on REST only for inter-service communications.
 If you only use HTTP and REST for inter-service communication you might end up with problems because latency and error probability will add up with every hop of your synchronous communication. In the beginning you won't realize it, but it will kill you in the end.
@@ -16,18 +16,18 @@ If you only use HTTP and REST for inter-service communication you might end up w
 You hopefully use some kind of asynchronous communication, maybe messaging.
 And if you use messaging on the Amazon AWS Cloud you most likely use SNS and SQS.
 
-##### Collaboration Testing including SNS/SQS
+## Collaboration Testing including SNS/SQS
 
 But how can you test your microservices including the communication in your CI/CD-Pipeline?
 Your build should not rely on internet connections, so you should connect to the AWS Cloud during your CI-Tests. 
 
-#### localstack inside docker
+### localstack inside docker
 Here comes [localstack&#8599;](https://localstack.cloud/) ([Github&#8599;](https://github.com/localstack/localstack))
 They have provided some fake Amazon AWS services for testing.
 
 You do not need to install it on your machine, there is a docker image available on [https://hub.docker.com/r/localstack/localstack/ &#8599;](https://hub.docker.com/r/localstack/localstack/).
 
-#### How to bootstrap queues and topics
+### How to bootstrap queues and topics
 But before your test execution, you will need to setup the topics and queues.
 How should you do that?
 * During the test setup? 
@@ -65,7 +65,7 @@ Then I map that `localstack_setup` folder containing the startup script into the
           - /var/run/docker.sock:/var/run/docker.sock
 
 
-#### How to do the topic and queue configuration inside a startup script?
+### How to do the topic and queue configuration inside a startup script?
 
 Thank you Gustavo Siqueira for providing some scripts how to set up those stuff [on your blog&#8599;](https://gugsrs.com/localstack-sqs-sns/)
 We just need to create a shell script now.
@@ -186,9 +186,9 @@ We just need to create a shell script now.
 
 When you look at the code, you will see that bash scripting is not my programming mother tongue. I'm more a java guy. So if you have some improvements, I will be happy.
 
-##### One more thing
+## One more thing
 
-#### Where am I? localhost or not?
+## Where am I? localhost or not?
 
 When SQS clients ask for a queue, they will receive a URL of the queue.
 Now localstack needs to know its own hostname. Is it localhost? Maybe... or not?
@@ -200,7 +200,7 @@ If your SQS clients live on the docker host it's `HOSTNAME_EXTERNAL=localhost` a
 If you have a mixed scenario? 
 Now you have a problem....
 
-#### inside _and_ outside docker networks
+### inside _and_ outside docker networks
 
 My constraints are:
 
