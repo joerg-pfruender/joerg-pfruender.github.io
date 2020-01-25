@@ -25,7 +25,7 @@ Your build should not rely on internet connections, so you should connect to the
 Here comes [localstack&#8599;](https://localstack.cloud/) ([Github&#8599;](https://github.com/localstack/localstack))
 They have provided some fake Amazon AWS services for testing.
 
-You do not need to install it on your machine, there is a docker image available on [https://hub.docker.com/r/localstack/localstack/ &#8599;](https://hub.docker.com/r/localstack/localstack/).
+You do not need to install it on your machine, there is a docker image available on [Docker Hub&#8599;](https://hub.docker.com/r/localstack/localstack/).
 
 ### How to bootstrap queues and topics
 But before your test execution, you will need to setup the topics and queues.
@@ -37,7 +37,7 @@ How should you do that?
 What if the localstack docker container could just come up with all topics and queues "magically" preconfigured during its own startup?
 
 Here is the solution:
-If you map a directory into `/docker-entrypoint-initaws.d` of the localstacks docker-container volume it gets executed right after the start of the localstack container.
+If you map a directory into `/docker-entrypoint-initaws.d` of the localstack's docker-container volume it gets executed right after the start of the localstack container.
 
 So I put an shell script inside the folder `localstack_setup` that bootstraps my topics and queues.
 Then I map that `localstack_setup` folder containing the startup script into the `/docker-entrypoint-initaws.d` directory of the docker container.
@@ -74,7 +74,6 @@ We just need to create a shell script now.
 1. Install jq for parsing the json messages of aws cli return values.
 2. Configure dummy credentials and regions for aws-cli. I use [HERE_DOCs&#8599;](https://linuxhint.com/bash-heredoc-tutorial/) to create the configuration files.
 3. Create some functions to setup topics and queues:
-
     * get_all_queues
     * create_queue
     * get_all_topics
@@ -188,7 +187,7 @@ When you look at the code, you will see that bash scripting is not my programmin
 
 ## One more thing
 
-## Where am I? localhost or not?
+### Where am I? localhost or not?
 
 When SQS clients ask for a queue, they will receive a URL of the queue.
 Now localstack needs to know its own hostname. Is it localhost? Maybe... or not?
