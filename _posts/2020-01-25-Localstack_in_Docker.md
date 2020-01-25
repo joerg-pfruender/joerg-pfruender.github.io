@@ -204,7 +204,7 @@ Now you have a problem....
 My constraints are:
 
 * In CI/CD my clients and tests live inside the docker-compose network.
-* On my workstation I sometimes need to debug from outside so:
+* On my workstation I sometimes need to debug from outside.
 
 I've tried several solutions, and now I use this:
 
