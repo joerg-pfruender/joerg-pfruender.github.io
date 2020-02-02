@@ -228,5 +228,9 @@ I've tried several solutions, and now I use this:
   to my `/etc/hosts` file.
   
 Now I can use localstack from inside and outside the docker-compose network with no issues. Well it's kind of a bad hack, but until now, it works for me.
+
+## Update
+
+Since it is not easy to copy paste the bash script from this page, you can find in [a separate file](https://github.com/joerg-pfruender/joerg-pfruender.github.io/blob/master/assets/setup_sns_sqs.sh), too.
   
 *Any comments or suggestions? Leave an issue or a pull request!*

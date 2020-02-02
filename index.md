@@ -5,4 +5,4 @@ layout: home
 
 **about Software and IT**
 
-![Head](assets/head.png)
+![Head](assets/joerg-pfruender.png)
