@@ -14,6 +14,8 @@ You can find more information on that on [GitHub's privacy statement&#8599;](htt
 
 Unless otherwise stated, code on this page is licenced by [Apache License Version 2.0&#8599;](https://github.com/joerg-pfruender/LICENSE).
 
+The information and code on this page is SHARED WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />By except where otherwise noted, other text content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license&#8599;</a> 
 
 
@@ -41,7 +43,13 @@ Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konk
 
 Wenn nicht anders genannt, stelle ich die Programme auf dieser Seite unter der [Apache License Version 2.0&#8599;](https://github.com/joerg-pfruender/LICENSE) zur Verfügung.
 
-Sonstigen Text stelle ich, wenn nicht anders genannt, zur Verfügung unter der <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz&#8599;</a>.
+Die Informationen auf dieser Seite sind nach bestem Wissen und Gewissen zusammengestellt.
+Ich kann jedoch keine Garantie für deren Richtigkeit übernehmen.
+Ich hafte in keinem Fall für Schäden oder Folgeschäden jeglicher Art, die durch die Nutzung von Informationen auf dieser Seite entstehen. 
+
+Sonstigen Text stelle ich, wenn nicht anders genannt, zur Verfügung unter der 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz&#8599;</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
 ### Kontakt
 
