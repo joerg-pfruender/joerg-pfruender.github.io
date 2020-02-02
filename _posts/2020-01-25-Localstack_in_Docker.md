@@ -231,6 +231,6 @@ Now I can use localstack from inside and outside the docker-compose network with
 
 ## Update
 
-Since it is not easy to copy paste the bash script from this page, you can find in [a separate file](https://github.com/joerg-pfruender/joerg-pfruender.github.io/blob/master/assets/setup_sns_sqs.sh), too.
+Since it is not easy to copy paste the bash script from this page, you can find in [a separate file&#8599;](https://github.com/joerg-pfruender/joerg-pfruender.github.io/blob/master/assets/setup_sns_sqs.sh), too.
   
 *Any comments or suggestions? Leave an issue or a pull request!*

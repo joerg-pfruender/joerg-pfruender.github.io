@@ -10,6 +10,13 @@ permalink: /about/
 I do not collect or store personal data from you on my page. My page is hosted on [GitHub Pages&#8599;](https://pages.github.com/).
 You can find more information on that on [GitHub's privacy statement&#8599;](https://help.github.com/en/github/site-policy/github-privacy-statement).
 
+### Licence
+
+Unless otherwise stated, code on this page is licenced by [Apache License Version 2.0&#8599;](https://github.com/joerg-pfruender/LICENSE).
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />By except where otherwise noted, other text content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license&#8599;</a> 
+
+
 ### Contact
 
 Leave an issue, pull request or send an e-mail to
@@ -30,6 +37,12 @@ Mehr zum Datenschutz bei GitHub findest Du unter [GitHub's privacy statement&#85
 Meine Seite enthält Links&#8599; zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
 Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
 
+### Lizenz
+
+Wenn nicht anders genannt, stelle ich die Programme auf dieser Seite unter der [Apache License Version 2.0&#8599;](https://github.com/joerg-pfruender/LICENSE) zur Verfügung.
+
+Sonstigen Text stelle ich, wenn nicht anders genannt, zur Verfügung unter der <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz&#8599;</a>.
+
 ### Kontakt
 
 Erstelle ein Issue, einen Pull Request oder schreibe mir eine E-Mail an
@@ -37,3 +50,5 @@ Erstelle ein Issue, einen Pull Request oder schreibe mir eine E-Mail an
 
 Wenn Du mir eine E-Mail schickst, wird sie bei Google, Web.de und auf meinem persönlichen Computer gespeichert.
 Wenn Du willst, dass Deine persönlichen Daten (also Deine E-Mails) gelöscht werden, dann schicke mir einfach auch eine E-Mail und frag danach.
+
+
