@@ -133,14 +133,23 @@ Yes. Obviously the default method `getHttpServletMapping()` did not make it from
 
 Luckily the apache folks already have an new version available. You simply need to patch the dependencies of your spring boot project:
 
-    implementation 'org.apache.tomcat.embed:tomcat-embed-core:9.0.30' // standard version 9.0.29 that comes with spring boot 2.2.2 has a bug
-    implementation 'org.apache.tomcat.embed:tomcat-embed-el:9.0.30' // standard version 9.0.29 that comes with spring boot 2.2.2 has a bug
-    implementation 'org.apache.tomcat.embed:tomcat-embed-websocket:9.0.30' // standard version 9.0.29 that comes with spring boot 2.2.2 has a bug
+    implementation 'org.apache.tomcat.embed:tomcat-embed-core:9.0.31' // standard version 9.0.29 that comes with spring boot 2.2.2 has a bug
+    implementation 'org.apache.tomcat.embed:tomcat-embed-el:9.0.31' // standard version 9.0.29 that comes with spring boot 2.2.2 has a bug
+    implementation 'org.apache.tomcat.embed:tomcat-embed-websocket:9.0.31' // standard version 9.0.29 that comes with spring boot 2.2.2 has a bug
 
 (build.gradle)
 
 
 Then it works!
+
+### Update
+
+#### 2020-02-25 changed to version 9.0.31
+due to CVE-2020-1938, please use version 9.0.31!
+ 
+Sources: 
+* http://tomcat.apache.org/security-9.html#Fixed_in_Apache_Tomcat_9.0.31
+* https://twitter.com/TheApacheTomcat/status/1231939678154240003 
 
 
 *Any comments or suggestions? Leave an issue or a pull request!*
