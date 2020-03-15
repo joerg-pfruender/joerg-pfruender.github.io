@@ -2,7 +2,7 @@
 layout: post
 title:  "Streiterei bei Pull-Requests (German)"
 date:   2020-03-05 12:05:00 +0100
-categories: [software, collaboration, Zusammenarbeit]
+categories: [software, Zusammenarbeit]
 tags: [software, pull requests, merge requests]
 ---
 
