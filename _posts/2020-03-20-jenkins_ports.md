@@ -10,7 +10,7 @@ tags: [software, ci, free port, port, jenkins]
 
 <small>Image by [Hamuraj&#8599;](https://pixabay.com/de/users/Hamuraj-364370/?utm_source=link-attribution) from [Pixabay&#8599;](https://pixabay.com/?utm_source=link-attribution)</small>
 
-When testing web applications on your [Jenkins&#8599;](https://jenkins.io/) server you will soonly find yourself opening your web application on a [port&#8599;](https://de.wikipedia.org/wiki/Port_%28Protokoll%29) for some integration tests for your [REST API&#8599;](https://en.wikipedia.org/wiki/Representational_state_transfer) or for a [selenium test&#8599;](https://www.selenium.dev/).
+When testing web applications on your [Jenkins&#8599;](https://jenkins.io/) server you will soonly find yourself opening your web application on a [port&#8599;](https://en.wikipedia.org/wiki/Port_(computer_networking)) for some integration tests for your [REST API&#8599;](https://en.wikipedia.org/wiki/Representational_state_transfer) or for a [selenium test&#8599;](https://www.selenium.dev/).
 
 **But which port should you choose?**
 
