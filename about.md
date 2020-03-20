@@ -16,7 +16,9 @@ Unless otherwise stated, code on this page is licenced by [Apache License Versio
 
 The information and code on this page is SHARED WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />By except where otherwise noted, other text content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license&#8599;</a> 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />By except where otherwise noted, other text content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license&#8599;</a>
+
+Some of the pictures are from [pixabay&#8599;](https://pixabay.com/) using their [license&#8599;](https://pixabay.com/service/license/). 
 
 
 ### Contact
@@ -50,6 +52,8 @@ Ich hafte in keinem Fall für Schäden oder Folgeschäden jeglicher Art, die dur
 Sonstigen Text stelle ich, wenn nicht anders genannt, zur Verfügung unter der 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz&#8599;</a>.
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+Manche der Bilder sind von [pixabay&#8599;](https://pixabay.com/) unter der Nutzung ihrer [Lizenz&#8599;](https://pixabay.com/de/service/license/).
 
 ### Kontakt
 
