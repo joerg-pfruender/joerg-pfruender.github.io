@@ -43,7 +43,7 @@ try {
 finally {
   if (serverSocket != null) {
     try {
-      serverSocket.close();
+      serverSocket.close()
     } catch (IOException ignore) {
     }
   }
