@@ -11,14 +11,16 @@ The api is simple and straightforward, easy to understand: You can start using c
 
 Having used testcontainers for some months, I want to share some of my experiences:
 
-## Database-Containers
+## Database Containers
 
 One of the most impressive and easy to use things are [database testcontainers&#8599;](https://www.testcontainers.org/modules/databases/):
 You do not need to use in memory databases like hsqldb or h2 for your tests, but you can use the same database engine which runs production.
 You can choose among a large list of many popular database images.
 
 It's so easy that I have only one advice for you:
-Try to minimize the numbers of container startups. 
+
+**Try to minimize the numbers of container startups!**
+
 If you have multiple tests, that need a database, then do not startup and shutdown the container for each test. Your test times will explode.
 Better use the same container and clean up your database after your test or create a database with a random name for each test on the samce container instance.
 
@@ -42,6 +44,7 @@ But if your webdriver runs inside a testcontainer then your webdriver will not f
 What to do?
 1. You need to expose the server's port to the testcontainers:
    [`Testcontainers.exposeHostPorts(localServerPort);`&#8599;](https://www.testcontainers.org/features/networking/)
+   
    You should do that before starting the webdriver container.
 
 2. Find "localhost": 
@@ -59,7 +62,8 @@ Putting it all together:
 
 ### Get videos of failing tests with JUnit5
 
-The main problem: currently testcontainers is not informed by Junit5 that the test has failed.
+The main problem: currently testcontainers is not informed by [Junit5&#8599;](https://junit.org/junit5/) that the test has failed.
+There is still [an unresoved issue&#8599;](https://github.com/testcontainers/testcontainers-java/issues/1341) in the testcontainers project.
 We can implement that on our own, but it is not easy to find the container for the test.
 
 The basic idea:
