@@ -12,7 +12,7 @@ You can find more information on that on [GitHub's privacy statement&#8599;](htt
 
 ### Licence
 
-Unless otherwise stated, code on this page is licenced by [Apache License Version 2.0&#8599;](https://github.com/joerg-pfruender/LICENSE).
+Unless otherwise stated, code on this page is licenced by [Apache License Version 2.0&#8599;](https://github.com/joerg-pfruender/joerg-pfruender.github.io/blob/master/LICENSE).
 
 The information and code on this page is SHARED WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
 
@@ -53,7 +53,7 @@ Sonstigen Text stelle ich, wenn nicht anders genannt, zur Verfügung unter der
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz&#8599;</a>.
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-Manche der Bilder sind von [pixabay&#8599;](https://pixabay.com/) unter der Nutzung ihrer [Lizenz&#8599;](https://pixabay.com/de/service/license/).
+Manche der Bilder sind von [pixabay&#8599;](https://pixabay.com/) unter der Nutzung ihrer [Lizenz&#8599;](https://pixabay.com/service/license/).
 
 ### Kontakt
 
