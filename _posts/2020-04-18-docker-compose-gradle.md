@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "docker-compose and gradle"
-date:   2020-03-29 22:50:00 +0200
+title:  "gradle and docker-compose"
+date:   2020-04-18 16:40:00 +0200
 categories: [software, testing]
 tags: [software, java, docker-compose, gradle]
 ---
 
 Some weeks ago I have posted some thoughts on [Testcontainers](https://joerg-pfruender.github.io/software/testing/2020/03/29/testcontainers.html).
-When dealing with docker-compose there is a way, that I prefer over using testcontainers.
+When dealing with [docker-compose&#8599;](https://docs.docker.com/compose/) there is a way, that I prefer over using testcontainers.
 
 ## divide tests in unit tests and integration tests
 
@@ -19,11 +19,11 @@ It divides testing into several [phases&#8599;](https://maven.apache.org/ref/3.6
 * integration-test: perform all the integration tests
 * post-integration-test: teardown the test fixture
 
-I like to do testing like this with gradle as well and [Petri Kainulainen explains how to do it&#8599;](https://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-integration-testing/).
+I like to do testing like this with [gradle&#8599;](https://gradle.org/) as well and [Petri Kainulainen explains how to do it&#8599;](https://www.petrikainulainen.net/programming/gradle/getting-started-with-gradle-integration-testing/).
 
 ## docker-compose gradle plugin
 
-And for this scenario, I prefer the [docker-compose gradle plugin&#8599;](https://github.com/avast/gradle-docker-compose-plugin).
+And for this scenario, I prefer [Avast's docker-compose gradle plugin&#8599;](https://github.com/avast/gradle-docker-compose-plugin).
 
 ### build configuration
 
@@ -38,7 +38,7 @@ example docker-compose.yml
           - '3306'
 
 
-example gradle.build
+example build.gradle (extract)
 
     task integrationTest(type: Test) {
         description = 'IntegrationTest'
@@ -65,7 +65,7 @@ example gradle.build
 
 The gradle plugin fills java's system properties with the needed value to access the dependent services:
 
-Inside the test: Get the mapped port using the name of the service and it's internal port number
+Inside the test you can obtain the mapped port using the name of the service and it's internal port number:
 
     String port = System.getProperty("mysql.tcp.3306");
 
@@ -125,12 +125,12 @@ Inside the test
 
 ## Comparison docker-compose testcontainers vs docker-compose gradle plugin
 
-### Testcontainers
+### docker-compose testcontainers
 - Suitable when you have the view "I need a container in this test".
 - Advantage: Perfectly cleans up the started containers after usage due to the [Ryuk Container&#8599;](https://github.com/testcontainers/moby-ryuk).
 - Does some network voodoo that might interfere with your test setup.
 
-### gradle plugin
+### docker-compose gradle plugin
 - suitable when you have the view "I need a container in this test suite"
 - Advantage: see logs of all services in build/docker-compose.log for debugging
 - Advantage: Faster turnaround cycles when developing locally because the containers can be left running.
