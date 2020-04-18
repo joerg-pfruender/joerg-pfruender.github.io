@@ -95,7 +95,7 @@ The basic idea:
 I do this with a workaround:
 Each of my tests uses the ScreenshotOnFailedTestExtension and implements the HasWebdriver interface. By using this interface I can inform the webdriver to save the video
 The Webdriver, you mean the container!
-Well, I use my own implmentation of a webdriver, that holds the container and delegates every webdriver call to the "real" webdriver.
+Well, I use my own implementation of a webdriver, that holds the container and delegates every webdriver call to the "real" webdriver.
 
 **The complete code can be found in my [github repository&#8599;](https://github.com/joerg-pfruender/webdriver-testcontainers-junit5).**
 
@@ -126,6 +126,8 @@ It has only one disadvantage: Starting and stopping a new container too often is
                 return webDriver;
             }
         }
+
+**Update 2020-04-18: Testcontainers has released Version 1.14.0 which supports JUnit5. Sadly there was a bug with the videos directory location, that has already been fixed on master, but not released yet. After the next release, I will post an update here.**
 
 ## Think before use docker-compose containers...
 
