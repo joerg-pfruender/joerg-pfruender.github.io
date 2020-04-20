@@ -132,9 +132,23 @@ Inside the test
 
 ### docker-compose gradle plugin
 - suitable when you have the view "I need a container in this test suite"
-- Advantage: see logs of all services in build/docker-compose.log for debugging
-- Advantage: Faster turnaround cycles when developing locally because the containers can be left running.
+- Advantage: see logs of all services in build/docker-compose.log for debugging with just one line of configuration.
 - Disadvantage: If your build job is interrupted/killed, there are sometimes some running containers left on the host. You need to setup a job on your ci server to kill them, e.g. in the night. 
 
-
 *Any comments or suggestions? Leave an issue or a pull request!*
+
+[Sergei Egorov&#8599;](https://twitter.com/bsideup) has written:
+
+> \> see logs of all services in build/docker-compose.log for debugging
+>
+> Can be done with TC
+>
+> \> Faster turnaround cycles
+>
+> Reusable containers in TC
+ 
+via [Twitter&#8599;](https://twitter.com/bsideup/status/1251803587128307712)
+
+*Thank you for your comments. I have updated the comparison section*
+* *I haven't seen Reusable Containers in Testcontainers before. Thank you for the link to [your blog post about that&#8599;](https://bsideup.github.io/posts/local_development_with_testcontainers/). I've removed "Advantage: Faster turnaround cycles when developing locally because the containers can be left running." from gradle-plugin advantages*
+* *I know that you can capture all logs with testcontainers, too. More information about that can be found on [https://www.testcontainers.org/features/container_logs/ &#8599;](https://www.testcontainers.org/features/container_logs/). With the gradle-plugin it's just dead simple with one line of configuration. I've changed it from "see logs of all services in build/docker-compose.log for debugging" to "see logs of all services in build/docker-compose.log for debugging with just one line of configuration." to make it more clear.*   
