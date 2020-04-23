@@ -61,7 +61,7 @@ One thing is important:
 
 Your BrowserWebdriverContainer must be a field in the test, annotated with @Container to work with videos.
 
-You should not start/stop the container in *your* code. That is done by hooks initialized by the @Testcontainers anntotation.
+You should not start/stop the container in *your* code. That is done by hooks initialized by the @Testcontainers annotation.
 It scans for fields annotated with @Container and executes their start/stop methods.
 If you do not put your BrowserWebdriverContainer into a @Container annotated field and start/stop it on your own, 
 then the framework can not inform the container if the test has failed and there will be no video on failing tests. 
@@ -99,7 +99,7 @@ Not long time ago testcontainers' [docker-compose module&#8599;](https://www.tes
 But things have changed: The newest code makes the version of the docker-compose container configurable.
 
 Currently I prefer using  [com.avast.gradle:gradle-docker-compose-plugin&#8599;](https://github.com/avast/gradle-docker-compose-plugin) 
-but that will be part of an other blog post.
+but that is be part of [an other blog post](https://joerg-pfruender.github.io/software/testing/2020/04/18/docker-compose-gradle.html).
 
 *Any comments or suggestions? Leave an issue or a pull request!*
 
