@@ -50,97 +50,59 @@ What to do?
 2. Find "localhost": 
    Your "localhost" will be `"host.testcontainers.internal"`
 
-Putting it all together:
-
-    Testcontainers.exposeHostPorts(port);
-    WebDriver webDriver = new BrowserWebDriverContainer()
-            .withCapabilities(new ChromeOptions())
-            .withRecordingMode(VncRecordingMode.RECORD_FAILING, new File("./target/"));
-    webDriver.get("http://host.testcontainers.internal:" + port + "/");
-
-
 
 ### Get videos of failing tests with JUnit5
 
-The main problem: currently testcontainers is not informed by [Junit5&#8599;](https://junit.org/junit5/) that the test has failed.
-There is still [an unresoved issue&#8599;](https://github.com/testcontainers/testcontainers-java/issues/1341) in the testcontainers project.
-We can implement that on our own, but it is not easy to find the container for the test.
+**Update 2020-04-23**
 
-The basic idea:
+Testcontainers has released Version 1.14.1 which supports videos from Testcontainers with [JUnit5&#8599;](https://junit.org/junit5/).
+
+One thing is important: 
+
+Your BrowserWebdriverContainer must be a field in the test, annotated with @Container to work with videos.
+
+You should not start/stop the container in *your* code. That is done by hooks initialized by the @Testcontainers anntotation.
+It scans for fields annotated with @Container and executes their start/stop methods.
+If you do not put your BrowserWebdriverContainer into a @Container annotated field and start/stop it on your own, 
+then the framework can not inform the container if the test has failed and there will be no video on failing tests. 
+
+### Putting it all together:
 
 
-        public class ScreenshotOnFailedTestExtension implements AfterEachCallback {
-        
-            @Override
-            public void afterEach(ExtensionContext extensionContext) {
-                if (extensionContext.getExecutionException().isPresent()) {
-                    // here: notify testcontainers that the test has failed....
-                    BrowserWebDriverContainer container = findContainerInstance(); // TODO: this will be fun for you to implement
-                    container.afterTest(new TestDescription() {
-                            @Override
-                            public String getTestId() {
-                                return "testId"; // TODO
-                            }
-        
-                            @Override
-                            public String getFilesystemFriendlyName() {
-                                return "name"; // TODO
-                            }
-                        }, executionException);
-        
-                }
-            }
+    @Testcontainers
+    public class SampleTest {
+    
+        @Container
+        BrowserWebDriverContainer container = new BrowserWebDriverContainer()
+                .withCapabilities(new ChromeOptions())
+                .withRecordingMode(BrowserWebDriverContainer.VncRecordingMode.RECORD_FAILING, new File("./build/"));
+                    
+        @BeforeAll
+        public static void setUp() {
+            org.testcontainers.Testcontainers.exposeHostPorts(port);
+    
         }
-
-I do this with a workaround:
-Each of my tests uses the ScreenshotOnFailedTestExtension and implements the HasWebdriver interface. By using this interface I can inform the webdriver to save the video
-The Webdriver, you mean the container!
-Well, I use my own implementation of a webdriver, that holds the container and delegates every webdriver call to the "real" webdriver.
-
-**The complete code can be found in my [github repository&#8599;](https://github.com/joerg-pfruender/webdriver-testcontainers-junit5).**
-
-It has only one disadvantage: Starting and stopping a new container too often is slower than using a local webdriver.
-
-
-        @ExtendWith({RecordVideoOnFailedTestExtension.class})
-        class SampleTest implements HasWebDriver {
-        
-        
-            WebDriver webDriver;
-        
-            @Test
-            void sampleTest() throws Exception {
-        
-                Testcontainers.exposeHostPorts(port);
-                BrowserWebDriverContainer container = new BrowserWebDriverContainer()
-                        .withCapabilities(new ChromeOptions())
-                        .withRecordingMode(BrowserWebDriverContainer.VncRecordingMode.RECORD_FAILING, new File("./build/"));
-                webDriver = VideoRecordingWebDriver.create(container);
-                webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                webDriver.get("http://host.testcontainers.internal:" + port + "/");
-        
-            }
-        
-            @Override
-            WebDriver getWebDriver() {
-                return webDriver;
-            }
+                    
+        @Test
+        void testA() {     
+            WebDriver webDriver = container.getWebDriver();       
+            webDriver.get("http://host.testcontainers.internal:" + port + "/");
         }
+        
+    }    
 
-**Update 2020-04-18: Testcontainers has released Version 1.14.0 which supports JUnit5. Sadly there was a bug with the videos directory location, that has already been fixed on master, but not released yet. After the next release, I will post an update here.**
+The complete code can be found in [https://github.com/joerg-pfruender/webdriver-testcontainers-junit5 &#8599;](https://github.com/joerg-pfruender/webdriver-testcontainers-junit5)
 
-## Think before use docker-compose containers...
+## docker-compose containers
 
 Not long time ago testcontainers' [docker-compose module&#8599;](https://www.testcontainers.org/modules/docker_compose/) only supported `docker-compose.yml`s up to version 2. The only workaround was using the native docker-compose command which meant you needed to install docker-compose on every machine. That was really annoying. 
 But things have changed: The newest code makes the version of the docker-compose container configurable.
 
-### Containers can't call outside
-
-If you want to use testcontainers' docker-compose to start some of your self-made docker images to startup a container, then you might find that they can not call outside.
-Maybe things have changed meanwhile, but in my experiments the reason was the [ambassador container&#8599;](https://github.com/testcontainers/testcontainers-java/blob/master/core/src/main/java/org/testcontainers/containers/AmbassadorContainer.java), that does some network voodoo. 
-Docker itself does some tricks to your firewall, that enables your containers to call the outside world, but the ambassador container bypasses that.
-My container inside testcontainers docker-compose was only able to call outside when I teared down the firewall. Of course I did not want to do that.
-
-Currently I prefer using  [com.avast.gradle:gradle-docker-compose-plugin&#8599;](https://github.com/avast/gradle-docker-compose-plugin) which still has it's own problems but that will be part of an other blog post.
+Currently I prefer using  [com.avast.gradle:gradle-docker-compose-plugin&#8599;](https://github.com/avast/gradle-docker-compose-plugin) 
+but that will be part of an other blog post.
 
 *Any comments or suggestions? Leave an issue or a pull request!*
+
+**Update 2020-04-23**
+* removed own implementation of getting videos and updated documentation to Testcontainers version 1.14.1
+* removed network issues from docker-compose because not reproducable, added link to other blog post.
