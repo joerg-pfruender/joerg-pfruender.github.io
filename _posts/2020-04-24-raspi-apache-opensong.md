@@ -189,13 +189,18 @@ That is not perfect, but a first start:
 
 
 2. Copy that file into the folder with the other opensong files using scp.
+
+            $ scp opensong.css pi@192.168.0.34:/var/www/html/words/opensong.css
+            
+   You should replace `192.168.0.34` with the ip of your own raspberry pi.            
+        
 3. Install mod_substitute on the raspberry pi's apache:
     
-        $ sudo a2enmod substitute
+            $ sudo a2enmod substitute
         
 4. Edit `/etc/apache2/apache2.conf` using nano:
         
-        $ sudo nano /etc/apache2/apache2.conf
+            $ sudo nano /etc/apache2/apache2.conf
         
    Look for some lines starting with `<Directory` .
    At the bottom of that section add:
@@ -233,6 +238,15 @@ You should update the rasberry pi every few days:
         $ sudo apt-get update
         $ sudo apt-get upgrade
 
-That's the first part. I will continue that project in a later blog post. 
+You should care for lower case and upper case when you follow my instructions.
+
+# closing words
+
+That's the first part. I will continue that project in a later blog post.
+
+
+Some of my screenshots have different names, that's because I was doing it in German. 
+
+
 
 *Any comments or suggestions? Leave an issue or a pull request!*
