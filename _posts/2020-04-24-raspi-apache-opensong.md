@@ -218,7 +218,8 @@ That is not perfect, but a first start:
 6. Test the new configuration `http://songbook`. The OpenSong files should now look like
 
    ![Song](/assets/songbook/what_a_friend.png)
-
+   
+More about `mod_substitute` can be found on [https://www.ollegustafsson.com/en/fun-with-mod-substitute/ &#8599;](https://www.ollegustafsson.com/en/fun-with-mod-substitute/)
 
 # Last advice
 
