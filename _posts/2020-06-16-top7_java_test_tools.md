@@ -1,7 +1,7 @@
 
 layout: post
 title:  "Top 7 Tools for Testing in Java"
-date:   2020-06-16 18:00:00 +0200
+date:   2020-06-16 16:00:00 +0200
 categories: [software, testing]
 tags: [java, mockito, unit test, easyrandom, testcontainers, wiremock, testng]
 ---
