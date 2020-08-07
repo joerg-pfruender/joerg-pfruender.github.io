@@ -14,7 +14,7 @@ But that has two disadvantages:
 2. You need a wall and a projector do display it.
 
 In former times we all had songbooks and everyone looked for the songs on his own.
-Nowadays everybody has smartphones. Whatabout using them as songbooks?
+Nowadays everybody has smartphones. What about using them as songbooks?
 
 You just need to have a webserver that anybody can access in your church's wifi.
 
@@ -22,7 +22,7 @@ You just need to have a webserver that anybody can access in your church's wifi.
 
 * Since witten songs do not have a big footprint on data you can just buy a cheap [Raspberry Pi&#8599;](https://www.raspberrypi.org/).
 * Install [Raspbian&#8599;](https://www.raspberrypi.org/downloads/) on it.
-* During installation you should choose a really good password.
+* During installation, you should choose a really good password.
 
 During the next steps you will need to use the terminal for setup. In these cases I will write the commands like that:
 
@@ -247,6 +247,23 @@ That's the first part. I will continue that project in a later blog post.
 
 Some of my screenshots have different names, that's because I was doing it in German. 
 
+# Update August 2020
 
+I have discontinued that project and there will be no further blog post.
+
+*Why?*
+
+It's the usability! It's just too complicated for users:
+
+I have started with publishing the songs on a usual web server on the internet.
+It had a basic authentication because you are not allowed to just publish songs on the internet for free for everyone.
+
+There were several problems:
+
+* Some people don't have smart phones and even if you give them a tablet, they cannot handle it.
+* Some mobile browsers cannot handle basic authentication, e.g. firefox focus
+* Most important: Today's internet users cannot distinguish between an url and a google search. They just google everything. Some only use the google search app, and do not start with a browser anymore. For me that was very disappointing to see. Could you think those people can easily connect to a raspberry pi provided wifi and access a website on that wifi?  
+
+Sorry for that.
 
 *Any comments or suggestions? Leave an issue or a pull request!*
