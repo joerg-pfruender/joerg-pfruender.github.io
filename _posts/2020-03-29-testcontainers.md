@@ -101,6 +101,9 @@ But things have changed: The newest code makes the version of the docker-compose
 Currently I prefer using  [com.avast.gradle:gradle-docker-compose-plugin&#8599;](https://github.com/avast/gradle-docker-compose-plugin) 
 but that is be part of [an other blog post](https://joerg-pfruender.github.io/software/testing/2020/04/18/docker-compose-gradle.html).
 
+### more...
+about testcontainers: [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*
 
 **Update 2020-04-23**
