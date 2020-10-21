@@ -6,7 +6,7 @@ categories: [software, testing]
 tags: [software, testing, serverless, aws, lambda, localstack, testcontainers]
 ---
 
-I am developing piece of software that should be deployed as a [AWS lambda&#8599;](https://aws.amazon.com/lambda/) function and I wanted to test it.
+I am developing a piece of software that should be deployed as a [AWS lambda&#8599;](https://aws.amazon.com/lambda/) function and I wanted to test it.
 Some people just write unit tests for the lambda and they think, that's enough.
 
 Not me:
@@ -31,7 +31,7 @@ But that docker container does not live in the docker-compose's network. So my l
 
 1. Create a new docker network.
 
-   With Testcontainers it's as simple as `Network shared = Network.SHARED;`
+   With Testcontainers it's as simple as `Network shared = Network.SHARED; shared.getId();`
 
 2. Attach docker-compose and lambdas to this network.
    
@@ -67,8 +67,8 @@ But that docker container does not live in the docker-compose's network. So my l
    ```
    Now all services can talk to each other.
    
-   If you still have troubles with node.js lambdas connecting to other services: 
-   Node.js often tries dns resolution that may not work in docker-compose networks. 
+   Still have troubles with node.js lambdas connecting to other services with some error message containing `getaddrinfo ENOTFOUND`? 
+   Maybe node.js tries dns resolution. And I think you do not have a dns server inside your docker-compose network telling the ip address of your database from the its dns name. 
    Get the IPs of the services and configure your node.js lambda using ip addresses instead of hostnames. 
 
 ## 2. Configure SQS to call Lambda
@@ -86,7 +86,7 @@ It took me some hours to find the documentation, but in the end it's just:
   }
 ```
 
-Just one thing: For a queue livin in localstack in a docker container getting the "correct" sqs queue url is not trivial. The hostname can be configured using the `HOSTNAME_EXTERNAL` environment variable of localstack's container.
+Just one thing: For a queue living in localstack in a docker container getting the "correct" sqs queue url is not trivial. The hostname can be configured using the `HOSTNAME_EXTERNAL` environment variable of localstack's container.
 But the hostname inside the docker-compose network and the hostname outside the docker-compose network can be different. And the port can be different, too.
 So, in my case, I replaced the hostname in the original queue url with the hostname that I got from testcontainers' `getServiceHost` function.  
 
@@ -127,7 +127,7 @@ Then I poll for the existence of a container with the expected name. When I find
     }
 ```
 
-Now I can run and debug the code. 
+Now I can run the code and see the log messages. 
 I hope that I can later share a complete how-to source code.
 
 
