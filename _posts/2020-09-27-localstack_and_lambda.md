@@ -38,7 +38,7 @@ But that docker container does not live in the docker-compose's network. So my l
    First I need to get the name of the network. I used a hack to do this:
    
    ```
-   networkName = (String) org.apache.commons.lang3.reflect.FieldUtils.readField(shared, "name", true);
+   networkName = ((NetworkImpl)shared).getName();
    ```
 
    Then I write a `docker-compose.override.yml`:
