@@ -130,7 +130,7 @@ Then I poll for the existence of a container with the expected name. When I find
 Now I can run the code and see the log messages. 
 I hope that I can later share a complete how-to source code.
 
-## Update 19 Nov 2020
+## Update 2020 Nov 20
 
 ## Obstacle No 4: hanging containers
 
