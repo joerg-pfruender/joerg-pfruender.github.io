@@ -130,6 +130,33 @@ Then I poll for the existence of a container with the expected name. When I find
 Now I can run the code and see the log messages. 
 I hope that I can later share a complete how-to source code.
 
+## Update 19 Nov 2020
+
+## Obstacle No 4: hanging containers
+
+Testcontainers has a really good way to make sure, that all containers are stopped after testing.
+But if localstack start a lambda container, then testcontainers does not know about that.
+So sometimes it happens that the lambda container remains running after the test has finished.
+I have not found a really good solution to that problem.
+But I have found a way to mitigate the problem:
+
+### Solution:
+Testcontainers comes with a dependency to the java-docker-api and using this you can find running containers, e.g.:
+
+```
+    public List<Container> findContainersByImageName(String containerImageNameSearchString) {
+        List<Container> containers = DockerClientFactory.instance().client().listContainersCmd().exec();
+        return containers.stream().filter(it -> it.getImage().contains(containerImageNameSearchString)).collect(Collectors.toList());
+    }
+
+    ...
+
+    findContainersByImageName("lambci/lambda:java11")
+
+```
+
+You can later filter them by network in order to find and stop the lambda container that was spawned by your localstack instance or just stop all really old containers that are still running.
+
 
 ### more information
 If you want to have more information about localstack or testcontainers, look at my blog posts on [localstack](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html) and on [testcontainers](/software/testing/2020/03/29/testcontainers.html).

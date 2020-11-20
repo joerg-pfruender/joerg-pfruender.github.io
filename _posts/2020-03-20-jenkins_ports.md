@@ -53,6 +53,50 @@ finally {
 
 If you have found a free port at the beginning of the build and try to bind the port later, there is a chance that maybe an other job has allocated the same port meanwhile.
 
+### Update: 
+
+In a scripted pipeline you can put this code almost anywhere.
+In a declared pipeline you can add a function at the very end after the closing pipeline block.
+Example:
+
+```
+pipeline {
+    ...
+    stage("build") {
+        environment {
+            SERVER_PORT = findFreePort()
+        }
+        steps {
+            sh "./gradlew build -DserverPort=${env.SERVER_PORT}"
+        }
+    }
+    ...
+}
+
+int findFreePort() {
+    ServerSocket serverSocket
+    try {
+        serverSocket = new ServerSocket(0)
+        int localServerPort = serverSocket.getLocalPort()
+        echo("using port: " + localServerPort)
+        serverSocket.close()
+        return localServerPort
+    } catch (IOException ex) {
+        echo("could not find a free port ${ex.message}")
+        throw ex;
+    }
+    finally {
+        if (serverSocket != null) {
+            try {
+                serverSocket.close()
+            } catch (IOException ignore) {
+            }
+        }
+    }
+}
+
+```
+
 ## 2. Build inside a docker container
 
 Building inside a [docker&#8599;](https://www.docker.com/) container has many advantages:
@@ -73,7 +117,7 @@ You can even use fixed ports.
 ## 3. Port allocation by convention of number ranges
 
 If you look at [wikipedia's list of standard tcp ports&#8599;](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers), you may find that there are not many ports used above 35000.
-Especially in the areas of 35xxx, 36xxx, 39xxxx, 42xxx there is much free space.
+Especially in the areas of 35xxx, 36xxx, 39xxx, 42xxx, 45xxx, 47xxx, 48xxx there is much free space.
 
 You just need to make sure that there is no other build job using your port. You can avoid that by declaring number ranges:
 On your build agent server there are many executors. You can access the executor number by an environment variable in your Jenkinsfile `EXECUTOR_NUMBER`
@@ -89,6 +133,8 @@ if you build job needs three ports to allocate.
 
 **Disadvantage**
 
-You should make people agree the the rule of using range number for ports. If not, you might still have port conflicts.
+* You should make people agree the the rule of using range number for ports. If not, you might still have port conflicts.
+
+* If the service once can't free the port on stopping, that port remains blocked until manual interaction, e.g. reboot of the Jenkins node.
 
 *Any comments or suggestions? Leave an issue or a pull request!*
