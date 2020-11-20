@@ -106,13 +106,13 @@ After realising that, the solution was easy:
 ### Solution:
 
 I use the docker client, that comes with the testcontainers library:
-```
+```groovy
 DockerClientFactory.instance().client()
 ``` 
 
 Then I poll for the existence of a container with the expected name. When I find it, then I attach logging to it:
 
-``` 
+```groovy
     void attachLogger(Container container) {
         dockerClient.logContainerCmd(container.getId())
                 .withFollowStream(true)
@@ -143,7 +143,7 @@ But I have found a way to mitigate the problem:
 ### Solution:
 Testcontainers comes with a dependency to the java-docker-api and using this you can find running containers, e.g.:
 
-```
+```groovy
     public List<Container> findContainersByImageName(String containerImageNameSearchString) {
         List<Container> containers = DockerClientFactory.instance().client().listContainersCmd().exec();
         return containers.stream().filter(it -> it.getImage().contains(containerImageNameSearchString)).collect(Collectors.toList());

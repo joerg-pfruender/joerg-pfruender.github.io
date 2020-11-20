@@ -6,7 +6,7 @@ categories: [software, corona]
 tags: [software, corona, covid-19, app]
 ---
 
-Ich habe mir heute mal eine Stunde Zeit für einen Schnelldurchflug der [Corona-Warn-App](https://github.com/corona-warn-app) genommen.
+Ich habe mir heute mal eine Stunde Zeit für einen Schnelldurchflug der [Corona-Warn-App&#8599;](https://github.com/corona-warn-app) genommen.
 
 Dokumentation angeschaut, Quelltexte heruntergeladen (vor allem die Server-Seite, damit kenne ich mich aus), einiges überflogen und ich muss sagen:
 
@@ -45,9 +45,9 @@ Zu Hause schalte ich aber Bluetooth aus. Das spart Strom und durch die Zimmerdec
 
 **Installieren!**
 
-**[Google Play](https://play.google.com/store/apps/details?id=de.rki.coronawarnapp)**
+**[Google Play&#8599;](https://play.google.com/store/apps/details?id=de.rki.coronawarnapp)**
 
-**[Apple AppStore](https://apps.apple.com/de/app/corona-warn-app/id1512595757)**
+**[Apple AppStore&#8599;](https://apps.apple.com/de/app/corona-warn-app/id1512595757)**
   
 Übrigens: Ich habe nirgends gefunden, dass Daten an Bill Gates geschickt werden :-)
 

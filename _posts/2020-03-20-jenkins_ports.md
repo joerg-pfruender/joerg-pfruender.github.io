@@ -29,7 +29,7 @@ Since 99% of Java code is groovy compatible (older versions of groovy can not un
 you can also write Java code inside your Jenkinsfile.
 So you can allocate a free port just using:
 
-````
+````groovy
 int localServerPort = null
 ServerSocket serverSocket;
 try {
@@ -59,7 +59,7 @@ In a scripted pipeline you can put this code almost anywhere.
 In a declared pipeline you can add a function at the very end after the closing pipeline block.
 Example:
 
-```
+```groovy
 pipeline {
     ...
     stage("build") {
