@@ -19,7 +19,6 @@ Then you structure your build, that you first compile the classes and then run t
 
 ![parallel build](/assets/parallel-build.png)
 
-
 build.gradle:
 ```groovy
     test {
@@ -137,5 +136,7 @@ pipeline {
 }
 ```
 
+If you start parallelizing your build you might soonly see memory problems on your build server. 
+Think about [configuring memory settings in gradle&#8599;](https://docs.gradle.org/current/userguide/build_environment.html#sec:configuring_jvm_memory). 
 
 *Any comments or suggestions? Leave an issue or a pull request!*
