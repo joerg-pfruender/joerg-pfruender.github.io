@@ -49,14 +49,11 @@ Then I map that `localstack_setup` folder containing the startup script into the
       localstack:
         image: localstack/localstack
         ports:
-          - "4575"
-          - "4576"
-          - "4599"
+          - "4566"
         environment:
           - SERVICES=sns,sqs
           - DEBUG=1
           - DEFAULT_REGION=eu-central-1
-          - PORT_WEB_UI=4599
           - DOCKER_HOST=unix:///var/run/docker.sock
           - HOSTNAME_EXTERNAL=localstack
         volumes:
@@ -71,9 +68,7 @@ Thank you Gustavo Siqueira for providing some scripts how to set up those stuff 
 We just need to create a shell script now.
 
 0. AWS cli is already installed on localstack, no need to do that.
-1. Install jq for parsing the json messages of aws cli return values.
-2. Configure dummy credentials and regions for aws-cli. I use [HERE_DOCs&#8599;](https://linuxhint.com/bash-heredoc-tutorial/) to create the configuration files.
-3. Create some functions to setup topics and queues:
+1. Create some functions to setup topics and queues:
     * get_all_queues
     * create_queue
     * get_all_topics
@@ -81,46 +76,16 @@ We just need to create a shell script now.
     * link_queue_and_topic
     * guess_queue_arn_from_name
     
-4. Call those functions to create as many topics and queues as you need and connect them. 
+2. Call those functions to create as many topics and queues as you need and connect them. 
 
 
             #!/usr/bin/env bash
             
+            set -euo pipefail
+            
             # enable debug
             # set -x
-            
-            echo "installing jq"
-            apk add jq
-            
-            echo "configuring aws-cli"
-            aws_dir="/root/.aws"
-            if [[ -d "$aws_dir" ]]
-            then
-                echo "'${aws_dir}' already exists, skipping aws configuration with dummy credentials"
-            else
-               mkdir /root/.aws
-            
-                # https://linuxhint.com/bash-heredoc-tutorial/
-                NewFile=aws-dummy-credentials-temp
-                (
-            cat <<'AWSDUMMYCREDENTIALS'
-            [default]
-            AWS_ACCESS_KEY_ID = dummy
-            AWS_SECRET_ACCESS_KEY = dummy
-            AWSDUMMYCREDENTIALS
-                ) > ${NewFile}
-                mv aws-dummy-credentials-temp /root/.aws/credentials
-            
-                NewFile=aws-config-temp
-                (
-            cat <<'AWSCONFIG'
-            [default]
-            region = eu-central-1
-            AWSCONFIG
-                ) > ${NewFile}
-                mv aws-config-temp /root/.aws/config
-            
-            fi
+          
             
             echo "configuring sns/sqs"
             echo "==================="
@@ -130,28 +95,28 @@ We just need to create a shell script now.
             LOCALSTACK_DUMMY_ID=000000000000
             
             get_all_queues() {
-                aws --endpoint-url=http://${LOCALSTACK_HOST}:4576 sqs list-queues
+                awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sqs list-queues
             }
             
             
             create_queue() {
                 local QUEUE_NAME_TO_CREATE=$1
-                aws --endpoint-url=http://${LOCALSTACK_HOST}:4576 sqs create-queue --queue-name ${QUEUE_NAME_TO_CREATE}
+                awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sqs create-queue --queue-name ${QUEUE_NAME_TO_CREATE}
             }
             
             get_all_topics() {
-                aws --endpoint-url=http://${LOCALSTACK_HOST}:4575 sns list-topics
+                awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns list-topics
             }
             
             create_topic() {
                 local TOPIC_NAME_TO_CREATE=$1
-                aws --endpoint-url=http://${LOCALSTACK_HOST}:4575 sns create-topic --name ${TOPIC_NAME_TO_CREATE} | jq -r '.TopicArn'
+                awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns create-topic --name ${TOPIC_NAME_TO_CREATE}
             }
             
             link_queue_and_topic() {
                 local TOPIC_ARN_TO_LINK=$1
                 local QUEUE_ARN_TO_LINK=$2
-                aws --endpoint-url=http://${LOCALSTACK_HOST}:4575 sns subscribe --topic-arn ${TOPIC_ARN_TO_LINK} --protocol sqs --notification-endpoint ${QUEUE_ARN_TO_LINK}
+                awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns subscribe --topic-arn ${TOPIC_ARN_TO_LINK} --protocol sqs --notification-endpoint ${QUEUE_ARN_TO_LINK}
             }
             
             guess_queue_arn_from_name() {
@@ -215,9 +180,7 @@ I've tried several solutions, and now I use this:
     
           localstack:
             ports:
-              - "4575:4575"
-              - "4576:4576"
-              - "4599:4599"
+              - "4566:4566"
               
               
   My docker-compose.override.yml is mentioned in the `.gitignore` file so it will not make its way onto the build server.
@@ -232,6 +195,8 @@ Now I can use localstack from inside and outside the docker-compose network with
 ## Update
 
 Since it is not easy to copy paste the bash script from this page, you can find in [a separate file&#8599;](https://github.com/joerg-pfruender/joerg-pfruender.github.io/blob/master/assets/setup_sns_sqs.sh), too.
+
+2021-05-18 update for newer localstack versions
 
 ### more...
 about localstack and docker: [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
