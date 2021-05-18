@@ -13,41 +13,10 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
+set -euo pipefail
+
 # enable debug
 # set -x
-
-echo "installing jq"
-apk add jq
-
-echo "configuring aws-cli"
-aws_dir="/root/.aws"
-if [[ -d "$aws_dir" ]]
-then
-    echo "'${aws_dir}' already exists, skipping aws configuration with dummy credentials"
-else
-   mkdir /root/.aws
-
-    # https://linuxhint.com/bash-heredoc-tutorial/
-    NewFile=aws-dummy-credentials-temp
-    (
-cat <<'AWSDUMMYCREDENTIALS'
-[default]
-AWS_ACCESS_KEY_ID = dummy
-AWS_SECRET_ACCESS_KEY = dummy
-AWSDUMMYCREDENTIALS
-    ) > ${NewFile}
-    mv aws-dummy-credentials-temp /root/.aws/credentials
-
-    NewFile=aws-config-temp
-    (
-cat <<'AWSCONFIG'
-[default]
-region = eu-central-1
-AWSCONFIG
-    ) > ${NewFile}
-    mv aws-config-temp /root/.aws/config
-
-fi
 
 echo "configuring sns/sqs"
 echo "==================="
@@ -57,28 +26,27 @@ AWS_REGION=eu-central-1
 LOCALSTACK_DUMMY_ID=000000000000
 
 get_all_queues() {
-    aws --endpoint-url=http://${LOCALSTACK_HOST}:4576 sqs list-queues
+    awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sqs list-queues
 }
 
 
 create_queue() {
     local QUEUE_NAME_TO_CREATE=$1
-    aws --endpoint-url=http://${LOCALSTACK_HOST}:4576 sqs create-queue --queue-name ${QUEUE_NAME_TO_CREATE}
+    awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sqs create-queue --queue-name ${QUEUE_NAME_TO_CREATE}
 }
 
 get_all_topics() {
-    aws --endpoint-url=http://${LOCALSTACK_HOST}:4575 sns list-topics
+    awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns list-topics
 }
 
 create_topic() {
     local TOPIC_NAME_TO_CREATE=$1
-    aws --endpoint-url=http://${LOCALSTACK_HOST}:4575 sns create-topic --name ${TOPIC_NAME_TO_CREATE} | jq -r '.TopicArn'
-}
+    awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns create-topic --name ${TOPIC_NAME_TO_CREATE}
 
 link_queue_and_topic() {
     local TOPIC_ARN_TO_LINK=$1
     local QUEUE_ARN_TO_LINK=$2
-    aws --endpoint-url=http://${LOCALSTACK_HOST}:4575 sns subscribe --topic-arn ${TOPIC_ARN_TO_LINK} --protocol sqs --notification-endpoint ${QUEUE_ARN_TO_LINK}
+    awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns subscribe --topic-arn ${TOPIC_ARN_TO_LINK} --protocol sqs --notification-endpoint ${QUEUE_ARN_TO_LINK}
 }
 
 guess_queue_arn_from_name() {
