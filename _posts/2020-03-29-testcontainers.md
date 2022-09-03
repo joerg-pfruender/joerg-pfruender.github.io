@@ -30,6 +30,24 @@ If you want to startup a shared database container for all tests you have at lea
 * If you are not lucky to use TestNG you can use a [singleton container&#8599;](https://www.testcontainers.org/test_framework_integration/manual_lifecycle_control/#singleton-containers) .
  The awesome thing is: You do not need to care for stopping the container. The [Ryuk Container&#8599;](https://github.com/testcontainers/moby-ryuk) will care about that for you!
 
+In order to speed up test execution: 
+**Use a in-memory volume** for the directory, where the database stores the data.
+
+Example for [MySQLContainer&#8599;](https://www.testcontainers.org/modules/databases/mysql/):
+
+    container = new MySQLContainer("mysql:5.5")
+                .withTmpFs(Map.of("/var/lib/mysql", "rw"))  
+
+Example for docker-compose:
+
+    services:
+      mysql:
+        image: mysql:8.0.16
+        ports:
+          - '3306'
+        tmpfs:
+          - /var/lib/mysql
+
 ## Selenium / Webdriver
 
 I have had several hard times with [selenium&#8599;](https://www.selenium.dev/) tests when the browser vendors released new versions of their browsers. All selenium tests have broken (or were instable) and I had much work with fixing stuff.
@@ -105,6 +123,9 @@ but that is be part of [an other blog post](https://joerg-pfruender.github.io/so
 about testcontainers: [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
 
 *Any comments or suggestions? Leave an issue or a pull request!*
+
+**Update 2022-09-03**
+In-Memory volume for database
 
 **Update 2020-04-23**
 * removed own implementation of getting videos and updated documentation to Testcontainers version 1.14.1

@@ -27,7 +27,7 @@ docker run \
 
 ```
 
-If that does not work or if you use testcontainers, then there might be some more options to help you:
+If that does not work or if you use [testcontainers](https://joerg-pfruender.github.io/software/testing/2020/03/29/testcontainers.html), then there might be some more options to help you:
 
 ```bash
 #!/usr/bin/env bash

@@ -6,6 +6,10 @@ categories: [software, testing]
 tags: [software, testing, serverless, aws, lambda, localstack, testcontainers]
 ---
 
+![Dried Plants](/assets/pfruender_sonn_dried_plants.jpg)
+
+<small>&copy; Image by [Margarethe Pfründer-Sonn&#8599;](http://www.pfruender-sonn.de/objekte/spiel-mit-verschiedenen-materialien)</small>
+
 I am developing a piece of software that should be deployed as a [AWS lambda&#8599;](https://aws.amazon.com/lambda/) function and I wanted to test it.
 Some people just write unit tests for the lambda and they think, that's enough.
 

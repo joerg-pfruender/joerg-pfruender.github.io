@@ -18,7 +18,7 @@ The information and code on this page is SHARED WITHOUT WARRANTIES OR CONDITIONS
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />By except where otherwise noted, other text content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license&#8599;</a>
 
-Some of the pictures are from [pixabay&#8599;](https://pixabay.com/) using their [license&#8599;](https://pixabay.com/service/license/). 
+Some of the pictures are my own, some are from [pixabay&#8599;](https://pixabay.com/) using their [license&#8599;](https://pixabay.com/service/license/) and some are from other people used by permission. 
 
 
 ### Contact
@@ -53,7 +53,7 @@ Sonstigen Text stelle ich, wenn nicht anders genannt, zur Verfügung unter der
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz&#8599;</a>.
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 
-Manche der Bilder sind von [pixabay&#8599;](https://pixabay.com/) unter der Nutzung ihrer [Lizenz&#8599;](https://pixabay.com/service/license/).
+Manche der Bilder sind von mir, manche sind von [pixabay&#8599;](https://pixabay.com/) unter der Nutzung ihrer [Lizenz&#8599;](https://pixabay.com/service/license/) und manche sind von anderen Leuten mit deren Erlaubnis.
 
 ### Kontakt
 
