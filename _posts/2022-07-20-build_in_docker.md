@@ -6,6 +6,11 @@ categories: [software, testing]
 tags: [software, testing, ci, jenkins]
 ---
 
+![Matchsticks1](/assets/old_nails.jpg)
+
+<small>&copy; Image by [Margarethe Pfründer-Sonn&#8599;](http://www.pfruender-sonn.de/objekte/spiel-mit-verschiedenen-materialien)</small>
+
+
 Sometimes it happens that your build is successful locally, but it fails on CI.
 
 What can you do? The simplest, but most time-consuming thing: Add logging in order to find out.
