@@ -41,7 +41,7 @@ get_all_topics() {
 
 create_topic() {
     local TOPIC_NAME_TO_CREATE=$1
-    awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns create-topic --name ${TOPIC_NAME_TO_CREATE}
+    awslocal --endpoint-url=http://${LOCALSTACK_HOST}:4566 sns create-topic --output text --name ${TOPIC_NAME_TO_CREATE}
 }
 
 link_queue_and_topic() {
