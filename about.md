@@ -23,6 +23,8 @@ Some of the pictures are my own, some are from [pixabay&#8599;](https://pixabay.
 
 ### Contact
 
+<a rel="me" href="https://mastodontech.de/@joergpfruender">Mastodon</a>
+
 Leave an issue, pull request or send an e-mail to
 <a href="mailto:&#106;&#111;&#101;&#114;&#103;&#046;&#112;&#102;&#114;&#117;&#101;&#110;&#100;&#101;&#114;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#106;&#111;&#101;&#114;&#103;&#046;&#112;&#102;&#114;&#117;&#101;&#110;&#100;&#101;&#114;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
 
@@ -56,6 +58,8 @@ Sonstigen Text stelle ich, wenn nicht anders genannt, zur Verfügung unter der
 Manche der Bilder sind von mir, manche sind von [pixabay&#8599;](https://pixabay.com/) unter der Nutzung ihrer [Lizenz&#8599;](https://pixabay.com/service/license/) und manche sind von anderen Leuten mit deren Erlaubnis.
 
 ### Kontakt
+
+<a rel="me" href="https://mastodontech.de/@joergpfruender">Mastodon</a>
 
 Erstelle ein Issue, einen Pull Request oder schreibe mir eine E-Mail an
 <a href="mailto:&#106;&#111;&#101;&#114;&#103;&#046;&#112;&#102;&#114;&#117;&#101;&#110;&#100;&#101;&#114;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#106;&#111;&#101;&#114;&#103;&#046;&#112;&#102;&#114;&#117;&#101;&#110;&#100;&#101;&#114;&#064;&#103;&#111;&#111;&#103;&#108;&#101;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
