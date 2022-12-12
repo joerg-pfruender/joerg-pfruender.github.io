@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Forked MockInjector and version 3.0 released"
-date:   2022-10-22 14:00:00 +0200
+date:   2022-12-08 14:00:00 +0100
 categories: [software, testing]
 tags: [software, testing, unit tests]
 ---
