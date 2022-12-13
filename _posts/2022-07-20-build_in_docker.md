@@ -41,7 +41,7 @@ docker run -it -t -u 1000:1000 \
     --volume=$(pwd):$(pwd):rw,z -w $(pwd) \
     --volume=/var/run/docker.sock:/var/run/docker.sock \  # add map the docker socket as a volume into your docker container
     --volume=${HOME}/.docker:/home/jenkins/.docker \      # add map the .docker directory into the the build user's home directory: In this case, the user name was "jenkins". This is necessary, if the build cannot pull images from a docker repository, that needs credentials.
-    --group-add 999 \   # might help with some access problems
+    --group-add 999 \   # add the number of the group to which /var/run/docker.sock belongs INSIDE the container
     --privileged \      # might help with some privilege problems
     --net=host \        # should usually not be used, but sometimes it can help if you have routing problems, e.g. because of working in a VPN
     gradle:jdk17-alpine /bin/sh -c "./gradlew build --info --stacktrace"
