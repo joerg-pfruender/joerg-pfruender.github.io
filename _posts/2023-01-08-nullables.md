@@ -7,22 +7,22 @@ tags: [software, testing, unit tests, mocks, lean, nullables, noestimates]
 ---
 
 ![bridge at construction site](/assets/bridge-g0a6480546_1280.jpg)
-<small>Image by <a href="https://pixabay.com/users/projekt_kaffeebart-5458960/">Pixabay</a></small>
+<small>Image by <a href="https://pixabay.com/users/projekt_kaffeebart-5458960/">Projekt_Kaffeebart</a> from Pixabay</small>
 
 # The trigger: "Testing without mocks"
 
 Some days ago I read James Shores' paper [Testing without mocks](https://www.jamesshore.com/v2/projects/testing-without-mocks/testing-without-mocks).
 
-It caused different feeling to me, something between "oh cool" <> "Please tell me, you're not serious about this" <> "That's going to be a lot of work, coding all those nullable implementations" etc.
+It caused different feelings to me, something between "oh cool" and "Please tell me, you're not serious about this".
 
-I tried to imagine the discussions with some of my former colleagues "I will never have mocks in production code!" and "We don't have time to write Nullable implementations, we need to finish this project, go back to Mockito!" and "You really want to write tests for Nullable implementations?" 
+I tried to imagine the discussions with some of my former colleagues like "I will never have mocks in production code!" and "We don't have time to write Nullable implementations, we need to finish this project, go back to Mockito!" and "You really want to write tests for Nullable implementations?" 
 
 I later read the mastodon thread about it [https://mastodon.online/@jamesshore/109560187641736554](https://mastodon.online/@jamesshore/109560187641736554)
 and Michael Williamson's blog post [Reflections on "Testing Without Mocks"](https://mike.zwobble.org/2023/01/reflections-on-testing-without-mocks/).
 
 And then I was reminded of a project on which I worked some years ago....
 
-# UX first and test environment
+# "UX first" and "test environment"
 
 Our product owner during that project was really serious about user experience. 
 He first wanted us to first build some shiny nice frontend without full functionality.
