@@ -22,24 +22,24 @@ and Michael Williamson's blog post [Reflections on "Testing Without Mocks"](http
 
 And then I was reminded of a project on which I worked some years ago....
 
-# UX first and test scope
+# UX first and test environment
 
 Our product owner during that project was really serious about user experience. 
 He first wanted us to first build some shiny nice frontend without full functionality.
 And he did something like which is now known as "lean software development".
 
-One of his main UX concepts was a **test scope**. 
+One of his main UX concepts was a **test environment**. This was no extra staging system, but it was a button everyone could click on the production system. 
 You can still see this in the software today. 
 Look at [https://blog.genopace.de/allgemein/help-center-wissendatenbank-in-baufismart/](https://blog.genopace.de/allgemein/help-center-wissendatenbank-in-baufismart/) and spot "Testumgebung aktivieren" in the right upper corner on the first screenshot.
-When a user activated the test scope, everything was safeguarded: He could not mess up with real data and he could not issue real transactions. 
+When a user activated the test environment, everything was safeguarded: He could not mess up with real data and he could not issue real transactions. 
 
-When working inside test scope the user was able to activate different switches that e.g. returned some dummy data instead of real calculations.
+When working inside test environment some users were able to activate different switches that e.g. returned some dummy data instead of real calculations.
 
-The test scope has/had different purposes, I just remember three:
+The test environment has/had different purposes, I just remember three:
 
 1. usability testing on the real software, trade fair demos etc.
 2. training classes
-2. automated end-to-end tests on the production system
+3. automated end-to-end tests on the production system
 
 We still used "normal" unit tests with mockito, but I really liked that approach because it gave us much flexibility during software development.
 
@@ -55,8 +55,8 @@ We were just not able to cut the big scope into small slices and identify minima
 
 Maybe someone can try to combine these approaches:
 
-* test scope in production software user interface.
-* Nullables as first class deliverables e.g. for the test scope. 
+* test environment in production software user interface.
+* Nullables as first class deliverables e.g. for the test environment. 
 
 Then: 
 - Delivering one slice in one day will be easily achievable. That will improve measuring the progress of feature development.
