@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nullables as first class deliverables"
+title:  "Nullables as first class deliverable features"
 date:   2023-01-08 14:00:00 +0100
 categories: [software, testing]
 tags: [software, testing, unit tests, mocks, lean, nullables, noestimates]
@@ -51,7 +51,7 @@ Someone tried to introduce [#noEstimates](https://oikosofyseries.com/no-estimate
 
 We were just not able to cut the big scope into small slices and identify minimal viable increments. 
  
-# Idea: "Nullables" not only for tests, but as first class deliverables!
+# Idea: "Nullables" not only for tests, but as first class deliverable features!
 
 Maybe someone can try to combine these approaches:
 
