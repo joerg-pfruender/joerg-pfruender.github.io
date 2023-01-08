@@ -3,7 +3,7 @@ layout: post
 title:  "Nullables as first class deliverables"
 date:   2023-01-08 14:00:00 +0100
 categories: [software, testing]
-tags: [software, testing, unit tests, mocks, lean, nullables, #noestimates]
+tags: [software, testing, unit tests, mocks, lean, nullables, noestimates]
 ---
 
 ![bridge at construction site](/assets/bridge-g0a6480546_1280.jpg)
