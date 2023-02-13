@@ -57,7 +57,7 @@ Putting things together:
 
 In recent versions localstack only plays well when using `us-east-1` region:
 
-./aws/config
+~./aws/config
 ```
 [profile localstack]
 region = us-east-1
@@ -65,7 +65,7 @@ region = us-east-1
 
 Localstack does not evaluate credentials, so you can just set some dummy values:
 
-./aws/credentials
+~./aws/credentials
 ```
 [localstack]
 aws_access_key=dummy

@@ -163,7 +163,10 @@ You can later filter them by network in order to find and stop the lambda contai
 
 
 ### more information
-If you want to have more information about localstack or testcontainers, look at my blog posts on [localstack](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html) and on [testcontainers](/software/testing/2020/03/29/testcontainers.html).
+If you want to have more information about localstack or testcontainers, look at my blog posts on
+* [localstack](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html) 
+* [testcontainers](/software/testing/2020/03/29/testcontainers.html)
+* [Debugging AWS Secrets Manager Credentials using Localstack](/software/docker/microservices/testing/2023/02/13/localstack_and_secretsmanager_samples.html)
 
 ### legal notice
 Amazon AWS and AWS lambda are [trademarks&#8599;](https://aws.amazon.com/trademark-guidelines/) of Amazon.com

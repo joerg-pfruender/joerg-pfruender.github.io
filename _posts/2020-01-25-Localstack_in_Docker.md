@@ -198,6 +198,8 @@ Since it is not easy to copy paste the bash script from this page, you can find 
 2021-05-18 update for newer localstack versions
 
 ### more...
-about localstack and docker: [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
+about localstack and docker: 
+* [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
+* [Debugging AWS Secrets Manager Credentials using Localstack](/software/docker/microservices/testing/2023/02/13/localstack_and_secretsmanager_samples.html)
   
 *Any comments or suggestions? Leave an issue or a pull request!*
