@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Debugging AWS Secrets Manager using Localstack"
+title:  "Debugging AWS Secrets Manager Credentials using Localstack"
 date:   2023-02-13 19:00:00 +0100
 categories: [software, docker, microservices, testing]
 tags: [docker, localstack, aws, secretsmanager, testing, java]
