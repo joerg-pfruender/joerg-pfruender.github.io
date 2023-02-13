@@ -53,7 +53,6 @@ Then I map that `localstack_setup` folder containing the startup script into the
         environment:
           - SERVICES=sns,sqs
           - DEBUG=1
-          - DEFAULT_REGION=eu-central-1
           - DOCKER_HOST=unix:///var/run/docker.sock
           - HOSTNAME_EXTERNAL=localstack
         volumes:
@@ -91,7 +90,7 @@ We just need to create a shell script now.
             echo "==================="
             # https://gugsrs.com/localstack-sqs-sns/
             LOCALSTACK_HOST=localhost
-            AWS_REGION=eu-central-1
+            AWS_REGION=us-east-1
             LOCALSTACK_DUMMY_ID=000000000000
             
             get_all_queues() {

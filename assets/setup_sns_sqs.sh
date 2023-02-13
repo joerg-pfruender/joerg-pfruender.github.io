@@ -22,7 +22,7 @@ echo "configuring sns/sqs"
 echo "==================="
 # https://gugsrs.com/localstack-sqs-sns/
 LOCALSTACK_HOST=localhost
-AWS_REGION=eu-central-1
+AWS_REGION=us-east-1
 LOCALSTACK_DUMMY_ID=000000000000
 
 get_all_queues() {
