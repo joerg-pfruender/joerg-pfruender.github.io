@@ -19,7 +19,7 @@ In the end I used localstack to debug the behaviour on my machine.
 I had written about localstack in some blog posts before, see [Testing with SNS/SQS using Localstack in Docker](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html).
 
 [Localstack&#8599;](https://localstack.cloud/) ([Github&#8599;](https://github.com/localstack/localstack))
-is a service for faking Amazon AWS services for testing.
+is a service for faking [Amazon AWS](https://aws.amazon.com) services for testing.
 
 You do not need to install it on your machine, there is a docker image available on [Docker Hub&#8599;](https://hub.docker.com/r/localstack/localstack/).
 
