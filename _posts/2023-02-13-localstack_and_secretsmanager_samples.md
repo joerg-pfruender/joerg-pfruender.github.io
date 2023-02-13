@@ -101,4 +101,9 @@ Environment:
 
 Happy Testing/Debugging!
 
+### more...
+about localstack and docker: 
+* [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
+* [Testing with SNS/SQS using Localstack in Docker](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html)
+  
 *Any comments or suggestions? Leave an issue or a pull request!*
