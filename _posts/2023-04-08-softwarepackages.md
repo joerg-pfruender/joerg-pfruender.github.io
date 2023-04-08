@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My favourite Desktop Opens-Source Software and Package Managers"
-date:   2023-04-08 18:00:00 +0100
+date:   2023-04-08 18:00:00 +0200
 categories: [software]
 tags: [open source software, package managers]
 ---
