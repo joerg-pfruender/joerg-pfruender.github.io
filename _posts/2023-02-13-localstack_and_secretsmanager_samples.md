@@ -9,11 +9,12 @@ tags: [docker, localstack, aws, secretsmanager, testing, java]
 ![key ring](/assets/keyring.jpg)
 <small>Image by <a href="https://pixabay.com/users/takeshiiiit-49965/">Takeshi Hirano</a> via <a href="https://pixabay.com/">Pixabay</a></small>
 
-During the last days, I had a tough time debugging. My service just did not want to startup because of missing credentials.
 
-I tried different things, but I did not really find out, why the service failed.
+During the last few days, I had a tough time debugging. My service did not want to startup because of missing credentials.
 
-In the end I used localstack to debug the behaviour on my machine.
+I tried different things. But I did not find out why the service failed.
+
+In the end, I used localstack to debug the behaviour on my machine.
 
 ## localstack inside docker
 I had written about localstack in some blog posts before, see [Testing with SNS/SQS using Localstack in Docker](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html).
@@ -23,8 +24,8 @@ is a service for faking [Amazon AWS](https://aws.amazon.com) services for testin
 
 You do not need to install it on your machine, there is a docker image available on [Docker Hub&#8599;](https://hub.docker.com/r/localstack/localstack/).
 
-Easiest way to consume it: Use the provided [docker-compose.yml](https://github.com/localstack/localstack/blob/master/docker-compose.yml). 
-You just need to specify, which service you actually want to use:
+The easiest way to consume it: Use the provided [docker-compose.yml](https://github.com/localstack/localstack/blob/master/docker-compose.yml). 
+You just need to specify, which service you want to use:
 
 `SERVICES=secretsmanager`
   
@@ -86,7 +87,7 @@ aws secretsmanager get-secret-value --endpoint-url=http://localhost:4566 --profi
 
 ```
 
-As an alternative you could also use [awslocal](https://pypi.org/project/awscli-local/) but I prefer using the endpoint parameter.
+As an alternative, you could also use [awslocal](https://pypi.org/project/awscli-local/) but I prefer using the endpoint parameter.
 
 #### configure java
 
