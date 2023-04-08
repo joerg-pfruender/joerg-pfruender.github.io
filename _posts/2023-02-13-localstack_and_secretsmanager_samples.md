@@ -17,15 +17,15 @@ I tried different things. But I did not find out why the service failed.
 In the end, I used localstack to debug the behaviour on my machine.
 
 ## localstack inside docker
-I had written about localstack in some blog posts before, see [Testing with SNS/SQS using Localstack in Docker](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html).
+I had written about localstack in some blog posts before; see [Testing with SNS/SQS using Localstack in Docker](/software/docker/microservices/testing/2020/01/25/Localstack_in_Docker.html).
 
 [Localstack&#8599;](https://localstack.cloud/) ([Github&#8599;](https://github.com/localstack/localstack))
 is a service for faking [Amazon AWS](https://aws.amazon.com) services for testing.
 
-You do not need to install it on your machine, there is a docker image available on [Docker Hub&#8599;](https://hub.docker.com/r/localstack/localstack/).
+You do not need to install it on your machine; there is a docker image available on [Docker Hub&#8599;](https://hub.docker.com/r/localstack/localstack/).
 
 The easiest way to consume it: Use the provided [docker-compose.yml](https://github.com/localstack/localstack/blob/master/docker-compose.yml). 
-You just need to specify, which service you want to use:
+You just need to specify which service you want to use:
 
 `SERVICES=secretsmanager`
   
@@ -56,7 +56,7 @@ Putting things together:
 
 ### configure aws profile
 
-In recent versions localstack only plays well when using `us-east-1` region:
+In recent versions, localstack only plays well when using the `us-east-1` region:
 
 ~./aws/config
 ```
@@ -87,11 +87,11 @@ aws secretsmanager get-secret-value --endpoint-url=http://localhost:4566 --profi
 
 ```
 
-As an alternative, you could also use [awslocal](https://pypi.org/project/awscli-local/) but I prefer using the endpoint parameter.
+As an alternative, you could also use [awslocal](https://pypi.org/project/awscli-local/), but I prefer using the endpoint parameter.
 
 #### configure java
 
-When using java to access the credentials you should make sure, that it connects to localstack:
+When using java to access the credentials, you should make sure that it connects to localstack:
 
 Java VM Options:
 `-Daws.secretsmanager.endpoint=http://localhost:4566 -Daws.accessKeyId=dummy -Daws.secretKey=dummy -Daws.region=us-east-1`

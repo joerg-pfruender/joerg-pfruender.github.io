@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "My favourite Desktop Opens Source Software and package managers"
+title:  "My favourite Desktop Opens-Source Software and Package Managers"
 date:   2023-04-08 18:00:00 +0100
 categories: [software]
 tags: [open source software, package managers]
 ---
 
-# My favourite desktop open source software
+# My favourite desktop open-source software
 
 * Firefox      https://www.mozilla.org/
 * Thunderbird  https://www.thunderbird.net/
@@ -16,7 +16,7 @@ tags: [open source software, package managers]
 
 # Ubuntu
 
-Ubuntu usually uses debian package format. But firefox pre-installed and provided as snap package.
+Ubuntu usually uses the debian package format. But firefox is pre-installed and provided as a snap package.
 On the one hand, you need to install it manually. On the other hand, snap-packaging breaks printer integration.
 
 So installation of the remaining favourite packages is:
@@ -25,15 +25,15 @@ sudo apt install -y thunderbird libreoffice gimp vlc
 ```
 # Raspberry Pi OS
 
-Raspberry Pi OS uses debian package, too.
-So installing my favourite open source software goes like this:
+Raspberry Pi OS uses the debian package, too.
+So installing my favourite open-source software goes like this:
 ```
 sudo apt install -y firefox-esr thunderbird libreoffice gimp vlc
 ```
 
 # macOS and Homebrew
 
-On Apple's macOS you can use homebrew for package management: https://brew.sh/
+On Apple's macOS, you can use homebrew for package management: https://brew.sh/
 
 After installing homebrew, we can install OSS software like this:
 ```

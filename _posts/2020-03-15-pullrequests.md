@@ -80,7 +80,7 @@ Schreibe aber auch, dass dieser Verbesserungsvorschlag optional ist und nicht ü
 ## 6. Benutze auch mal deine IDE
 
 Ich persönlich kann in dem eingebauten Review-Editor von [Gitlab&#8599;](https://gitlab.com/explore) viele Codeänderungen nicht verstehen, 
-die ich bspw. in [Intellij IDEA&#8599;](https://www.jetbrains.com/de-de/idea/) in der Code-Diff-Ansicht von zwei Branches auf den ersten kapiere.
+die ich bspw. in [IntelliJ IDEA&#8599;](https://www.jetbrains.com/de-de/idea/) in der Code-Diff-Ansicht von zwei Branches auf den ersten kapiere.
  
 
 ## 7. Nimm auch mal den Telefonhörer
