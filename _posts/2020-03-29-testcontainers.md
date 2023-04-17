@@ -116,9 +116,6 @@ The complete code can be found in [https://github.com/joerg-pfruender/webdriver-
 Not long time ago testcontainers' [docker-compose module&#8599;](https://www.testcontainers.org/modules/docker_compose/) only supported `docker-compose.yml`s up to version 2. The only workaround was using the native docker-compose command which meant you needed to install docker-compose on every machine. That was really annoying. 
 But things have changed: The newest code makes the version of the docker-compose container configurable.
 
-Currently I prefer using  [com.avast.gradle:gradle-docker-compose-plugin&#8599;](https://github.com/avast/gradle-docker-compose-plugin) 
-but that is be part of [an other blog post](https://joerg-pfruender.github.io/software/testing/2020/04/18/docker-compose-gradle.html).
-
 ### more...
 about testcontainers: [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
 
