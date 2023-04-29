@@ -52,7 +52,7 @@ link_queue_and_topic() {
 
 guess_queue_arn_from_name() {
     local QUEUE_NAME=$1
-    echo "arn:aws:sns:${AWS_REGION}:${LOCALSTACK_DUMMY_ID}:$QUEUE_NAME"
+    echo "arn:aws:sqs:${AWS_REGION}:${LOCALSTACK_DUMMY_ID}:$QUEUE_NAME"
 }
 
 QUEUE_NAME="queue123"
