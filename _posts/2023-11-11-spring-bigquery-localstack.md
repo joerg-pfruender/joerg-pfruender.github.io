@@ -119,5 +119,7 @@ We need to change the `BigQueryEmulatorContainer`, so that the service runs on t
 You can find the complete code on 
 [https://github.com/joerg-pfruender/springbootbigquerytestcontainers](https://github.com/joerg-pfruender/springbootbigquerytestcontainers)
 
+Pull Request for testcontainers: 
+[https://github.com/testcontainers/testcontainers-java/pull/7788](https://github.com/testcontainers/testcontainers-java/pull/7788)
 
 *Any comments or suggestions? Leave an issue or a pull request!*
