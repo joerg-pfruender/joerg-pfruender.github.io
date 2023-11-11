@@ -91,7 +91,7 @@ We need to override the CredentialsProvider spring bean:
 
 ```
 
-The whole configuration can be found in https://github.com/joerg-pfruender/springbootbigquerytestcontainers/blob/master/src/test/java/com/example/config/GcpTestConfiguration.java
+The whole configuration can be found in [https://github.com/joerg-pfruender/springbootbigquerytestcontainers/blob/master/src/test/java/com/example/config/GcpTestConfiguration.java](https://github.com/joerg-pfruender/springbootbigquerytestcontainers/blob/master/src/test/java/com/example/config/GcpTestConfiguration.java)
 
 
 ## Problem #3 Ports for testcontainers
@@ -117,7 +117,7 @@ We need to change the `BigQueryEmulatorContainer`, so that the service runs on t
 ```
 
 You can find the complete code on 
-https://github.com/joerg-pfruender/springbootbigquerytestcontainers
+[https://github.com/joerg-pfruender/springbootbigquerytestcontainers](https://github.com/joerg-pfruender/springbootbigquerytestcontainers)
 
 
 *Any comments or suggestions? Leave an issue or a pull request!*
