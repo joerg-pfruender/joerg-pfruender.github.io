@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Test your logging!"
-date:   2024-02-01 14:00:00 +0100
+date:   2024-01-02 14:00:00 +0100
 categories: [software, testing]
 tags: [software, testing, unit tests, logging, mocks, mockito]
 ---
