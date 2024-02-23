@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My favourite Desktop Opens-Source Software and Package Managers"
+title:  "My favourite Desktop Open-Source Software and Package Managers"
 date:   2023-04-08 18:00:00 +0200
 categories: [software]
 tags: [open source software, package managers]
@@ -65,3 +65,34 @@ choco install libreoffice
 choco install gimp
 choco install vlc
 ```
+
+# Update 2024-02-20 on Chocolatey
+
+## upgrade all
+
+```
+choco upgrade all -y
+```
+
+## more packages
+There are three more programs, that I recommend:
+
+* Draw.io   (vector graphics)   [https://www.drawio.com/](https://www.drawio.com/)
+* Bitwarden (password manager)  [https://bitwarden.com/](https://bitwarden.com/)
+* Bacula    (backup)            [https://www.bacula.org/](https://www.bacula.org/)
+
+```
+choco install drawio
+choco install bitwarden
+choco install bacula
+```
+
+homebrew:
+
+```
+brew install --cask drawio
+brew install --cask bitwarden
+brew install bacula-fd
+```
+
+*Any comments or suggestions? Leave an issue or a pull request!*
