@@ -31,17 +31,17 @@ So installing my favourite open-source software goes like this:
 sudo apt install -y firefox-esr thunderbird libreoffice gimp vlc
 ```
 
-# macOS and Homebrew
+# MacOS/Linux and Homebrew
 
 On Apple's macOS, you can use homebrew for package management: [https://brew.sh/](https://brew.sh/)
 
 After installing homebrew, we can install OSS software like this:
 ```
-brew install firefox
-brew install thunderbird
-brew install libreoffice
-brew install gimp
-brew install vlc
+brew install --cask firefox
+brew install --cask thunderbird
+brew install --cask libreoffice
+brew install --cask gimp
+brew install --cask vlc
 ```
 
 
@@ -59,20 +59,50 @@ I had to download all the software and install it.
 Recently I have found [https://chocolatey.org/](https://chocolatey.org/), where I found all my favourite packages.
 Next time I will only have to install Chocolatey and then:
 ```
-choco install firefox
-choco install thunderbird
-choco install libreoffice
-choco install gimp
-choco install vlc
+choco install firefox thunderbird libreoffice gimp vlc
 ```
 
 # Update 2024-02-20 on Chocolatey
 
 ## upgrade all
 
+You should update your software regularly. 
+
+With the help of https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file I've created a script:
 ```
-choco upgrade all -y
+@echo off
+
+:: BatchGotAdmin
+:-------------------------------------
+REM  --> Check for permissions
+    IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
+>nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
+) ELSE (
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+)
+
+REM --> If error flag set, we do not have admin.
+if '%errorlevel%' NEQ '0' (
+    echo Requesting administrative privileges...
+    goto UACPrompt
+) else ( goto gotAdmin )
+
+:UACPrompt
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    set params= %*
+    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+    "%temp%\getadmin.vbs"
+    del "%temp%\getadmin.vbs"
+    exit /B
+
+:gotAdmin
+    pushd "%CD%"
+    CD /D "%~dp0"
+:--------------------------------------    
+    choco upgrade all -y
 ```
+Copy this script into a text file and save if as `update.bat on your desktop. Then for updates, you just need to double-click on the icon.
 
 ## more packages
 There are three more programs, that I recommend:
@@ -82,9 +112,7 @@ There are three more programs, that I recommend:
 * Bacula    (backup)            [https://www.bacula.org/](https://www.bacula.org/)
 
 ```
-choco install drawio
-choco install bitwarden
-choco install bacula
+choco install drawio bitwarden bacula
 ```
 
 homebrew:
