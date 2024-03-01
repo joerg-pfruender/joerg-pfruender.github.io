@@ -19,7 +19,7 @@ tags: [open source software, package managers]
 Ubuntu usually uses the debian package format. But firefox is pre-installed and provided as a snap package.
 On the one hand, you don't need to install it manually. On the other hand, snap-packaging breaks printer integration.
 
-VLC is provided both as a deb package and as a snap package. But the deb package will be left outdated with security issues (unless you register for Ubuntu Pro and allow Ubuntu to send all your data to China).
+VLC is provided both as a debian package and as a snap package. But the deb package will be left outdated with security issues (unless you register for Ubuntu Pro and allow Ubuntu to send all your data to China).
 
 So installation of the remaining favourite packages is:
 ```
@@ -80,7 +80,7 @@ sudo snap refresh
 ```
 
 
-## Raspberry Pi OS etc.
+## Raspberry Pi OS
 
 ```
 sudo apt-get update && sudo apt-get upgrade
@@ -142,7 +142,7 @@ There are three more programs, that I recommend:
 * Bacula    (backup)            [https://www.bacula.org/](https://www.bacula.org/)
 
 Although Bitwarden and Bacula are legally open source software, there's a company that dominates the development process.
-Still in their domain, they are probably the one most mature free software solutions that you can find.
+Still in their domain, they are probably one of most mature free software solutions that you can find.
 
 Chocolatey:
 ```
