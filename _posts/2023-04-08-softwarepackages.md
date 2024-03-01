@@ -66,13 +66,13 @@ Next time I will only have to install Chocolatey and then:
 choco install firefox thunderbird libreoffice gimp vlc
 ```
 
-# Update 2024-02-20
+#### Update 2024-02-20/2024-03-01
 
-## upgrade all
+# Upgrade all software
 
 You should update your software regularly.
 
-### Ubuntu
+## Ubuntu
 
 ```
 sudo apt-get update && sudo apt-get upgrade
@@ -80,25 +80,25 @@ sudo snap refresh
 ```
 
 
-### Raspberry Pi OS etc.
+## Raspberry Pi OS etc.
 
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-### homebrew
+## Homebrew
 
 ```
 brew update && brew upgrade
 ```
 
-### chocolatey
+## Chocolatey
 
 ```
 choco upgrade all -y
 ```
 Windows users usually don't like the command line. 
-So with the help of https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file I've created a script:
+So with the help of [https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file](https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file) I've created a script:
 ```
 @echo off
 
@@ -132,20 +132,24 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------    
     choco upgrade all -y
 ```
-Copy this script into a text file and save if as `update.bat on your desktop. Then for updates, you just need to double-click on the icon.
+Copy this script into a text file and save if as `update.bat` on your desktop. Then for updates, you just need to double-click on the icon.
 
-## more packages
+# more packages
 There are three more programs, that I recommend:
 
 * Draw.io   (vector graphics)   [https://www.drawio.com/](https://www.drawio.com/)
 * Bitwarden (password manager)  [https://bitwarden.com/](https://bitwarden.com/)
 * Bacula    (backup)            [https://www.bacula.org/](https://www.bacula.org/)
 
+Although Bitwarden and Bacula are legally open source software, there's a company that dominates the development process.
+Still in their domain, they are probably the one most mature free software solutions that you can find.
+
+Chocolatey:
 ```
 choco install drawio bitwarden bacula
 ```
 
-homebrew:
+Homebrew:
 
 ```
 brew install --cask drawio
