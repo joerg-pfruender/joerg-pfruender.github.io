@@ -19,7 +19,7 @@ tags: [open source software, package managers]
 Ubuntu usually uses the debian package format. But firefox is pre-installed and provided as a snap package.
 On the one hand, you don't need to install it manually. On the other hand, snap-packaging breaks printer integration.
 
-VLC is provided both as a debian package and as a snap package. But the deb package will be left outdated with security issues (unless you register for Ubuntu Pro and allow Ubuntu to send all your data to China).
+VLC is provided both as a debian package and as a snap package. But the deb package will be left outdated with security issues (unless you register for Ubuntu Pro and [allow Ubuntu to send all your data to chinese government authorities](https://ubuntu.com/legal/ubuntu-pro/personal)).
 
 So installation of the remaining favourite packages is:
 ```
