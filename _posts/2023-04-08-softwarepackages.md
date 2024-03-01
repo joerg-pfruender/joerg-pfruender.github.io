@@ -17,12 +17,16 @@ tags: [open source software, package managers]
 # Ubuntu
 
 Ubuntu usually uses the debian package format. But firefox is pre-installed and provided as a snap package.
-On the one hand, you need to install it manually. On the other hand, snap-packaging breaks printer integration.
+On the one hand, you don't need to install it manually. On the other hand, snap-packaging breaks printer integration.
+
+VLC is provided both as a deb package and as a snap package. But the deb package will be left outdated with security issues (unless you register for Ubuntu Pro and allow Ubuntu to send all your data to China).
 
 So installation of the remaining favourite packages is:
 ```
-sudo apt install -y thunderbird libreoffice gimp vlc
+sudo apt install -y thunderbird libreoffice gimp
+sudo snap install vlc
 ```
+
 # Raspberry Pi OS
 
 Raspberry Pi OS uses the debian package, too.
@@ -31,7 +35,7 @@ So installing my favourite open-source software goes like this:
 sudo apt install -y firefox-esr thunderbird libreoffice gimp vlc
 ```
 
-# MacOS/Linux and Homebrew
+# MacOS and Homebrew
 
 On Apple's macOS, you can use homebrew for package management: [https://brew.sh/](https://brew.sh/)
 
@@ -62,13 +66,39 @@ Next time I will only have to install Chocolatey and then:
 choco install firefox thunderbird libreoffice gimp vlc
 ```
 
-# Update 2024-02-20 on Chocolatey
+# Update 2024-02-20
 
 ## upgrade all
 
-You should update your software regularly. 
+You should update your software regularly.
 
-With the help of https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file I've created a script:
+### Ubuntu
+
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo snap refresh
+```
+
+
+### Raspberry Pi OS etc.
+
+```
+sudo apt-get update && sudo apt-get upgrade
+```
+
+### homebrew
+
+```
+brew update && brew upgrade
+```
+
+### chocolatey
+
+```
+choco upgrade all -y
+```
+Windows users usually don't like the command line. 
+So with the help of https://stackoverflow.com/questions/1894967/how-to-request-administrator-access-inside-a-batch-file I've created a script:
 ```
 @echo off
 
