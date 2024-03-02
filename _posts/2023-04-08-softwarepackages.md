@@ -135,18 +135,17 @@ if '%errorlevel%' NEQ '0' (
 Copy this script into a text file and save if as `update.bat` on your desktop. Then for updates, you just need to double-click on the icon.
 
 # more packages
-There are three more programs, that I recommend:
+There are two more programs, that I recommend:
 
 * Draw.io   (vector graphics)   [https://www.drawio.com/](https://www.drawio.com/)
 * Bitwarden (password manager)  [https://bitwarden.com/](https://bitwarden.com/)
-* Bacula    (backup)            [https://www.bacula.org/](https://www.bacula.org/)
 
 Although Bitwarden and Bacula are legally open source software, there's a company that dominates the development process.
 Still in their domain, they are probably one of most mature free software solutions that you can find.
 
 Chocolatey:
 ```
-choco install drawio bitwarden bacula
+choco install drawio bitwarden
 ```
 
 Homebrew:
@@ -154,7 +153,6 @@ Homebrew:
 ```
 brew install --cask drawio
 brew install --cask bitwarden
-brew install bacula-fd
 ```
 
 *Any comments or suggestions? Leave an issue or a pull request!*
