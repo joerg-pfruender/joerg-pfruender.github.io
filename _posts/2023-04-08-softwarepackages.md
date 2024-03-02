@@ -140,8 +140,8 @@ There are two more programs, that I recommend:
 * Draw.io   (vector graphics)   [https://www.drawio.com/](https://www.drawio.com/)
 * Bitwarden (password manager)  [https://bitwarden.com/](https://bitwarden.com/)
 
-Although Bitwarden and Bacula are legally open source software, there's a company that dominates the development process.
-Still in their domain, they are probably one of most mature free software solutions that you can find.
+Although Bitwarden is legally open source software, there's a company that dominates the development process.
+Still in its domain, it is probably one of most mature free software solutions that you can find.
 
 Chocolatey:
 ```
