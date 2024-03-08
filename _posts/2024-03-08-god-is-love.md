@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  "Gott ist Liebe. God is love"
+title:  "Gott ist Liebe. | God is love."
 date:   2024-03-08 18:00:00 +0100
 categories: [christianity]
 tags: [christentum, gott, liebe, christianity, God, love]
 ---
-![pregnant](/assets/pregnant.jpg)
-
-
 
 **<a href="#English">-> to the english version</a>**
 
