@@ -36,7 +36,7 @@ in ihm ist vielmehr das Ja Wirklichkeit geworden.
 
 Es mag bestimmt Leute geben, die behaupten: "Gott könnte theoretisch lügen, wenn er es wollte, er tut es halt nicht." Von außen betrachtet ist es das gleiche, ob jemand etwas niemals tut oder es nicht kann. Diskussionen darüber sind lediglich Haarspalterei.
 
-Vermutlich gibt es noch andere Dinge, die Gott nicht kann. Ich vermute, das nach-der-Geographie-Klassenarbeit-Gebet "Bitte lass Stockholm die Haupstadt von Dänemark gewesen sein." hat nicht sehr viel Aussichten auf Erfolg.
+Vermutlich gibt es noch andere Dinge, die Gott nicht kann. Ich vermute, das nach-der-Geographie-Klassenarbeit-Gebet "Bitte lass Stockholm die Hauptstadt von Dänemark gewesen sein." hat nicht sehr viel Aussicht auf Erfolg.
 
 # Gott ist im praktischen Sinne allmächtig
 
