@@ -71,7 +71,7 @@ The bible writer John gives us a glimpse into the inner relationship of God. Not
 2. Jesus and the Father are one. [John 10:30](https://www.biblegateway.com/passage/?search=John+10%3A30&version=WEB)
 3. If you want to know what God the Father is like, see what Jesus is like. [John 12:45](https://www.biblegateway.com/passage/?search=John+12%3A45&version=WEB)
 4. Jesus does or says nothing without complete agreement with the Father's will. [John 5:19](https://www.biblegateway.com/passage/?search=John+5%3A19&version=WEB) and [John 14:10](https://www.biblegateway.com/passage/?search=John+14%3A10&version=WEB)
-5. Jesus was given authority to execute the will of God. [John 5:22](https://www.biblegateway.com/passage/?search=John+5%3A22&version=WEB)
+5. Jesus is given authority to execute the will of God. [John 5:22](https://www.biblegateway.com/passage/?search=John+5%3A22&version=WEB)
 6. Jesus: "The Holy Spirit, whom the Father will send in my name, will teach you all things, and will remind you of all that I said to you." [John 14:26](https://www.biblegateway.com/passage/?search=John+14%3A26&version=WEB)
 
 Obviously the three are very close to each other.
