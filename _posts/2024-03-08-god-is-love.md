@@ -61,7 +61,7 @@ So three gods? One holy family?
 
 *As a Java developer, I simplify it this way: There are three "interfaces", "God the Father", "Jesus" and "the Holy Spirit". We know the interfaces, but we don't know the implementation. Who could understand God's implementation?*
 
-So only one God and three point of views?
+So only one God and three points of views?
 
 Unfortunately, it's a bit more complicated than that :-(
 
