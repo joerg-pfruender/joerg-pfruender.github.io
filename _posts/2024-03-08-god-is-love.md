@@ -3,8 +3,11 @@ layout: post
 title:  "Gott ist Liebe. | God is love."
 date:   2024-03-08 18:00:00 +0100
 categories: [christianity]
-tags: [christentum, gott, liebe, christianity, God, love]
+tags: [christentum, Gott, Liebe, christianity, God, love]
 ---
+![Ivy](/assets/ivy.jpg)
+
+<small>Image by <a href="https://pixabay.com/users/alexas_fotos-686414/?utm_source=link-attribution">Alexa</a> from <a href="https://pixabay.com//?utm_source=link-attribution">Pixabay</a></small>
 
 **<a href="#English">-> to the english version</a>**
 
