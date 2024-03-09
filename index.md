@@ -3,7 +3,7 @@ layout: home
 ---
 
 
-**about Software and IT**
+**about Software and God**
 
 ![Head](assets/joerg-pfruender.png)
 
