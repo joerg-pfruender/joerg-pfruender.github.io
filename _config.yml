@@ -19,9 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Jörg Pfründer"
-description: "About Software and IT"
+description: "About Software and God"
 url: "https://joerg-pfruender.github.io/"
-twitter_username: joergpfruender
 github_username:  joerg-pfruender
 
 # Build settings
