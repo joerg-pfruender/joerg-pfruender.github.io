@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Alle Menschen sind gleich | All human beings are equal"
-date:   2024-06-16 9:50:00 +0100
+date:   2024-06-16 9:50:00 +0200
 categories: [christianity]
-tags: [Christentum, Menschenrechte, Gleichhheit, christianity, equal rights]
+tags: [Christentum, Menschenrechte, Gleichheit, christianity, equal rights]
 ---
 **<a href="#English">-> to the english version</a>**
 
