@@ -55,7 +55,7 @@ After installation, we can change it back to the real passphrase.
 ## 1. Install Chocolatey
 [https://chocolatey.org/install](https://chocolatey.org/install)
 
-## 2. Install Packages from Chocolatey
+## 2. Install packages from Chocolatey
 ```
 choco install firefox thunderbird libreoffice gimp vlc
 ```

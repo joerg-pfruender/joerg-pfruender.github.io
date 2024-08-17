@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My favourite tools for software development on Linux"
+title:  "My favourite tools for Java Software Development on Linux"
 date:   2024-08-17 16:00:00 +0200
 categories: [software]
 tags: [package managers, development]
@@ -35,6 +35,8 @@ flatpak install -y flathub org.keepassxc.KeePassXC
 
 ## 4. Install SDKMAN! and Node Version Manager
 
+For managing java and node.js versions
+
 * [https://sdkman.io/](https://sdkman.io/)
 * [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
@@ -42,6 +44,8 @@ flatpak install -y flathub org.keepassxc.KeePassXC
 curl -s "https://get.sdkman.io" | bash 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 ```
+
+For a solution of managing different python versions, please look at [https://www.baeldung.com/linux/python-multiple-versions](https://www.baeldung.com/linux/python-multiple-versions).
 
 ### 4.a Optional: Install AWS CLI
 
@@ -89,6 +93,9 @@ chmod u+x /opt/tools/j/j.sh
 echo 'alias j=". /opt/tools/j/j.sh"' >> ~/.bashrc
 ```
 
+## 7. Install docker-ce
+
+see [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
 
 ### links
 
