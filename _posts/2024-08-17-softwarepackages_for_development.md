@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My favourite tools for software development on Linux"
-date:   2024-04-08 16:00:00 +0200
+date:   2024-08-17 16:00:00 +0200
 categories: [software]
 tags: [package managers, development]
 ---
@@ -24,6 +24,7 @@ sudo apt install -y curl wget git zip
 * [PyCharm](https://flathub.org/apps/com.jetbrains.PyCharm-Community)
 * [DBeaver](https://flathub.org/apps/io.dbeaver.DBeaverCommunity)
 * [KeePassXC](https://flathub.org/apps/org.keepassxc.KeePassXC)
+
 ```bash
 flatpak install -y flathub com.getpostman.Postman
 flatpak install -y flathub com.jetbrains.IntelliJ-IDEA-Community
@@ -42,6 +43,15 @@ curl -s "https://get.sdkman.io" | bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 ```
 
+### 4.a Optional: Install AWS CLI
+
+[https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+```
 ## 5. create /opt/tools for other tools
 
 ```bash

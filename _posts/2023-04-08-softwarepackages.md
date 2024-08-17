@@ -14,40 +14,34 @@ tags: [open source software, package managers]
 * Gimp         [https://www.gimp.org/](https://www.gimp.org/)
 * VLC          [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
-# Ubuntu
+# Linux: Flatpak
 
-Ubuntu usually uses the debian package format. But firefox is pre-installed and provided as a snap package.
-On the one hand, you don't need to install it manually. On the other hand, snap-packaging breaks printer integration.
+## 1. Install flatpak
 
-VLC is provided both as a debian package and as a snap package. But the deb package will be left outdated with security issues (unless you register for Ubuntu Pro and [allow Ubuntu to send all your data to chinese government authorities](https://ubuntu.com/legal/ubuntu-pro/personal)).
+[https://www.flatpak.org/setup/](https://www.flatpak.org/setup/)
 
-So installation of the remaining favourite packages is:
-```
-sudo apt install -y thunderbird libreoffice gimp
-sudo snap install vlc
-```
-
-# Raspberry Pi OS
-
-Raspberry Pi OS uses the debian package, too.
-So installing my favourite open-source software goes like this:
-```
-sudo apt install -y firefox-esr thunderbird libreoffice gimp vlc
+## 2. Install packages from flatpak
+```bash
+flatpak install -y flathub org.mozilla.firefox
+flatpak install -y flathub org.mozilla.Thunderbird
+flatpak install -y flathub org.libreoffice.LibreOffice
+flatpak install -y flathub org.gimp.GIMP
+flatpak install -y flathub org.videolan.VLC
 ```
 
-# MacOS and Homebrew
+# MacOS: Homebrew
 
-On Apple's macOS, you can use homebrew for package management: [https://brew.sh/](https://brew.sh/)
+## 1. Install Homebrew
+[https://brew.sh/](https://brew.sh/)
 
-After installing homebrew, we can install OSS software like this:
-```
+## 2. Install packages from homebrew
+```bash
 brew install --cask firefox
 brew install --cask thunderbird
 brew install --cask libreoffice
 brew install --cask gimp
 brew install --cask vlc
 ```
-
 
 Additional note to self:
 When installing a brew package from a git repository, it needs ssh.
@@ -56,25 +50,29 @@ The easiest workaround is temporarily changing the ssh passphrase to an "empty" 
 After installation, we can change it back to the real passphrase.
 [https://www.unixtutorial.org/changing-passphrase-to-your-ssh-private-key](https://www.unixtutorial.org/changing-passphrase-to-your-ssh-private-key)
 
-# Windows and Chocolatey
+# Windows: Chocolatey
 
-Setting up the computer for a friend was always a long way of work.
-I had to download all the software and install it.
-Recently I have found [https://chocolatey.org/](https://chocolatey.org/), where I found all my favourite packages.
-Next time I will only have to install Chocolatey and then:
+## 1. Install Chocolatey
+[https://chocolatey.org/install](https://chocolatey.org/install)
+
+## 2. Install Packages from Chocolatey
 ```
 choco install firefox thunderbird libreoffice gimp vlc
 ```
-
-#### Update 2024-02-20/2024-03-01
 
 # Upgrade all software
 
 You should update your software regularly.
 
+## Flatpak
+
+```bash
+flatpak update
+```
+
 ## Ubuntu
 
-```
+```bash
 sudo apt-get update && sudo apt-get upgrade
 sudo snap refresh
 ```
@@ -82,13 +80,13 @@ sudo snap refresh
 
 ## Raspberry Pi OS
 
-```
+```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 ## Homebrew
 
-```
+```bash
 brew update && brew upgrade
 ```
 
@@ -134,25 +132,54 @@ if '%errorlevel%' NEQ '0' (
 ```
 Copy this script into a text file and save if as `update.bat` on your desktop. Then for updates, you just need to double-click on the icon.
 
-# more packages
-There are two more programs, that I recommend:
+# more programs
+There are a few more programs, that I recommend:
 
 * Draw.io   (vector graphics)   [https://www.drawio.com/](https://www.drawio.com/)
 * Bitwarden (password manager)  [https://bitwarden.com/](https://bitwarden.com/)
+* Brave (privacy oriented browser) [https://brave.com/](https://brave.com/)
+* Backup: 
+  * Déjà Dup for Linux and 
+  * [FreeFileSync](https://freefilesync.org/) for Windows, which has [no support for Chocolatey](https://freefilesync.org/forum/viewtopic.php?t=10390)
 
 Although Bitwarden is legally open source software, there's a company that dominates the development process.
 Still in its domain, it is probably one of most mature free software solutions that you can find.
 
+Flatpak:
+```bash
+flatpak install -y flathub com.jgraph.drawio.desktop
+flatpak install -y flathub com.bitwarden.desktop
+flatpak install -y flathub com.brave.Browser
+flatpak install -y flatpak install flathub org.gnome.DejaDup
+```
+
+
 Chocolatey:
 ```
-choco install drawio bitwarden
+choco install drawio bitwarden brave
 ```
 
 Homebrew:
 
-```
+```bash
 brew install --cask drawio
 brew install --cask bitwarden
+brew install --cask brave-browser
 ```
+
+### Links:
+* [My favourite tools for software development on Linux](https://joerg-pfruender.github.io/software/2024/08/17/softwarepackages_for_development.html)
+
+### Updates
+
+#### 2024-02-20/2024-03-01
+
+Howto upgrade packages
+
+#### 2024-08-17
+* change package managers for Linux to Flatpak
+* add Brave browser
+* add backup software
+
 
 *Any comments or suggestions? Leave an issue or a pull request!*
