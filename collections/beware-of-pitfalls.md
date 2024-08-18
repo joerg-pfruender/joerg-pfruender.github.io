@@ -38,3 +38,13 @@ Microsoft Authenticator overwrites MFA accounts, locking users out
 ### JPA 
 
 [Top 3 JPA Pitfalls](https://joerg-pfruender.github.io/software/2021/12/28/jpa-wtf.html)
+
+### DateFormat is not ThreadSafe
+Avoiding Java DateFormat Pitfalls: Best Practices Unveiled
+[https://javanexus.com/blog/avoiding-java-dateformat-pitfalls-best-practices](https://javanexus.com/blog/avoiding-java-dateformat-pitfalls-best-practices)
+
+### Unmodifiable Collections 
+Unmodifiable Collections expose methods for modifying them. Calling these methods will just result in RuntimeExceptions.
+
+Immutable vs Unmodifiable Collection in Java
+[https://www.baeldung.com/java-collection-immutable-unmodifiable-differences](https://www.baeldung.com/java-collection-immutable-unmodifiable-differences)
