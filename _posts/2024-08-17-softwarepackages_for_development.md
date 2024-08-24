@@ -99,8 +99,8 @@ see [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-doc
 
 ### links
 
-* [My favourite Desktop Open-Source Software and Package Managers](https://joerg-pfruender.github.io/software/2023/04/08/softwarepackages.html)
-* [Easily switch between java versions with SDKMAN! and 'j'](https://joerg-pfruender.github.io/software/java/2022/12/30/sdkman_j.html)
+* [My favourite Desktop Open-Source Software and Package Managers](/software/2023/04/08/softwarepackages.html)
+* [Easily switch between java versions with SDKMAN! and 'j'](/software/java/2022/12/30/sdkman_j.html)
 
 
 *Any comments or suggestions? Leave an issue or a pull request!*

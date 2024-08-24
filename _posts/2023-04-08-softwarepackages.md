@@ -139,8 +139,9 @@ There are a few more programs, that I recommend:
 * Bitwarden (password manager)  [https://bitwarden.com/](https://bitwarden.com/)
 * Brave (privacy oriented browser) [https://brave.com/](https://brave.com/)
 * Backup: 
-  * Déjà Dup for Linux and 
+  * [Déjà Dup](https://apps.gnome.org/de/DejaDup/) for Linux and 
   * [FreeFileSync](https://freefilesync.org/) for Windows, which has [no support for Chocolatey](https://freefilesync.org/forum/viewtopic.php?t=10390)
+* Zip on Windows: [7-zip](https://www.7-zip.org/)
 
 Although Bitwarden is legally open source software, there's a company that dominates the development process.
 Still in its domain, it is probably one of most mature free software solutions that you can find.
@@ -156,7 +157,7 @@ flatpak install -y flatpak install flathub org.gnome.DejaDup
 
 Chocolatey:
 ```
-choco install drawio bitwarden brave
+choco install drawio bitwarden brave 7zip
 ```
 
 Homebrew:
@@ -168,7 +169,8 @@ brew install --cask brave-browser
 ```
 
 ### Links:
-* [My favourite tools for software development on Linux](https://joerg-pfruender.github.io/software/2024/08/17/softwarepackages_for_development.html)
+* [My favourite tools for software development on Linux](/software/2024/08/17/softwarepackages_for_development.html)
+* [Easily switch between java versions with SDKMAN! and 'j'](/software/java/2022/12/30/sdkman_j.html)
 
 ### Updates
 
