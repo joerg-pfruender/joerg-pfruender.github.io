@@ -14,4 +14,5 @@ tags: [christianity]
 * [Alle Menschen sind gleich / All human beings are equal](/christianity/2024/06/16/Gleichheit.html)
 
 [Why Christmas is special to me in 2023 / Warum Weihnachten 2023 für mich besonders ist](/christianity/christmas/2023/12/18/christmas23.html)
+
 [Der depremierendste Job meines Lebens | The most depressing job of my life](/christianity/2024/09/15/most-depressing-job.html)
