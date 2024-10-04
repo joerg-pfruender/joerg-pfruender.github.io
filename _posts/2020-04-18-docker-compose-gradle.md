@@ -157,4 +157,4 @@ via [Twitter&#8599;](https://twitter.com/bsideup/status/1251803587128307712)
 * *Logs: I know that you can capture all logs with testcontainers, too. More information about that can be found on [https://www.testcontainers.org/features/container_logs/ &#8599;](https://www.testcontainers.org/features/container_logs/). With the gradle-plugin it's just dead simple with one line of configuration. I've changed it from "see logs of all services in build/docker-compose.log for debugging" to "see logs of all services in build/docker-compose.log for debugging with just one line of configuration." to make it more clear.*
 * *Reusable: I haven't seen Reusable Containers in Testcontainers before. Thank you for the link to [your blog post about that&#8599;](https://bsideup.github.io/posts/local_development_with_testcontainers/). I've removed "Advantage: Faster turnaround cycles when developing locally because the containers can be left running." from gradle-plugin advantages*
 
-   
+[More about Testing](/collections/testautomation.html)   

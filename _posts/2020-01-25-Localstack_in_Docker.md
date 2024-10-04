@@ -201,5 +201,7 @@ Since it is not easy to copy paste the bash script from this page, you can find 
 about localstack and docker: 
 * [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
 * [Debugging AWS Secrets Manager Credentials using Localstack](/software/docker/microservices/testing/2023/02/13/localstack_and_secretsmanager_samples.html)
-  
+
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*

@@ -12,7 +12,8 @@ tags: [christianity]
 * [Gott ist Liebe. / God is love.](/christianity/2024/03/08/god-is-love.html)
 * [Alles aus Liebe! / You are loved!](/christianity/2024/03/09/god-loves.html)
 * [Alle Menschen sind gleich / All human beings are equal](/christianity/2024/06/16/Gleichheit.html)
+* [Opium fürs Volk? / Purpose of Christianity](/christianity/2024/10/02/religion-is-optional.html)
 
 [Why Christmas is special to me in 2023 / Warum Weihnachten 2023 für mich besonders ist](/christianity/christmas/2023/12/18/christmas23.html)
 
-[Der depremierendste Job meines Lebens | The most depressing job of my life](/christianity/2024/09/15/most-depressing-job.html)
+[Der depremierendste Job meines Lebens / The most depressing job of my life](/christianity/2024/09/15/most-depressing-job.html)

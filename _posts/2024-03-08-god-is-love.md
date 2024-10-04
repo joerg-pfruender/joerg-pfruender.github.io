@@ -46,6 +46,7 @@ Keiner tut etwas ohne den anderen, ständig sind sie miteinander in innigster We
 
 Wir können uns das nicht vorstellen, es ist ein Geheimnis.
 
+[Mehr über Gott](/collections/god.html)
 <a id="English"/>
 
 # English Version
@@ -83,6 +84,8 @@ Since before the beginning of time, God the Father, the Son and the Holy Spirit 
 
 We cannot imagine this, it is a mystery.
 
-*translated with help of deepl.com* 
+*translated with help of deepl.com*
+
+[More about God](/collections/god.html)
 
 *Any comments or suggestions? Leave an issue or a pull request!*

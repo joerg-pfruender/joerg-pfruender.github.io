@@ -110,4 +110,6 @@ about localstack and docker:
 ### legal notice
 Amazon AWS is a [trademarks&#8599;](https://aws.amazon.com/trademark-guidelines/) of Amazon.com
 
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*

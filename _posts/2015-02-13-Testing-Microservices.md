@@ -13,4 +13,6 @@ On February 2015 I gave a talk on testing microservices at [microxchg.io&#8599;]
 
 # [Slides (English)&#8599;](https://speakerdeck.com/joergpfruender/5-tipps-and-tricks-on-testing-microservices)
 
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*

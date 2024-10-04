@@ -54,4 +54,6 @@ Working with [JUnit 5](https://junit.org/junit5/) is ok, but [TestNG](https://te
 TestNG has good parameterized tests ("DataProvider") since more than ten years. TestNG's concept of suites is far more mature than JUnit's tags.
 In JUnit I sometimes need to write static initializers for some test setup. TestNG is far more flexible here. 
 
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*

@@ -119,6 +119,8 @@ But things have changed: The newest code makes the version of the docker-compose
 ### more...
 about testcontainers: [Three obstacles when testing lambdas with testcontainers and localstack](/software/testing/2020/09/27/localstack_and_lambda.html)
 
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*
 
 **Update 2022-09-03**

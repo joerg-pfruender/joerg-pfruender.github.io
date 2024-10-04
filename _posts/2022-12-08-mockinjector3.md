@@ -13,3 +13,5 @@ into [https://github.com/joerg-pfruender/MockInjector](https://github.com/joerg-
 and released version 3.0!
 
 No need to write any boilerplate code for mocking dependencies for your object under test!
+
+[More about Testing](/collections/testautomation.html)

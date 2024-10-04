@@ -122,4 +122,6 @@ You can find the complete code on
 Pull Request for testcontainers: 
 [https://github.com/testcontainers/testcontainers-java/pull/7788](https://github.com/testcontainers/testcontainers-java/pull/7788)
 
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*

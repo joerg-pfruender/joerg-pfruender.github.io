@@ -93,5 +93,6 @@ I value a good unit test over information hiding.
 #### External Link:
 * [slf4j FAQ](https://www.slf4j.org/faq.html#declared_static)
 
+[More about Testing](/collections/testautomation.html)
 
 *Any comments or suggestions? Leave an issue or a pull request!*

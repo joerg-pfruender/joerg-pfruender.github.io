@@ -137,4 +137,6 @@ if you build job needs three ports to allocate.
 
 * If the service once can't free the port on stopping, that port remains blocked until manual interaction, e.g. reboot of the Jenkins node.
 
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*

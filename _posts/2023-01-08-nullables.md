@@ -70,5 +70,6 @@ But I hope that Nullables will simplify our lives very much.
 
 *) As from the examples given in [https://github.com/jitterted/yacht-tdd](https://github.com/jitterted/yacht-tdd) and [https://github.com/jamesshore/agile2022](https://github.com/jamesshore/agile2022) the code for Nullable implementations is not a big deal, but some developers are able start big arguments about small things. 
 
+[More about Testing](/collections/testautomation.html)
 
 *Any comments or suggestions? Leave an issue or a pull request or discuss on [reddit](https://www.reddit.com/r/java/comments/106jhhb/testing_without_mocks_using_nullables_as_first/)!*

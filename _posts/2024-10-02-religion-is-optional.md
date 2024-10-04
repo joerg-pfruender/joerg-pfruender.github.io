@@ -41,6 +41,7 @@ Zum Weiterlesen:
 * [Wikipedia: Apologetik](https://de.wikipedia.org/wiki/Apologetik)
 * [Wikipedia: Pascalsche Wette](https://de.wikipedia.org/wiki/Pascalsche_Wette)
 
+[Mehr über Gott](/collections/god.html)
 <a id="English"/>
 
 # English Version
@@ -74,4 +75,8 @@ The answer can determine where you spend eternity.
 Further reading:
 * [Pascal's wager](https://en.wikipedia.org/wiki/Pascal%27s_wager)
 
-Translated with DeepL.com (free version)
+*translated with help of deepl.com*
+
+[More about God](/collections/god.html)
+
+*Any comments or suggestions? Leave an issue or a pull request!*

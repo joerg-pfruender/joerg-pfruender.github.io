@@ -48,6 +48,7 @@ Der frühere Himmel und die frühere Erde waren vergangen.
 ```
 [Offb 21.1](https://www.bibleserver.com/NG%C3%9C/Offenbarung21)
 
+[Mehr über Gott](/collections/god.html)
 
 <a id="English"/>
 
@@ -87,6 +88,8 @@ for the first heaven and the first earth have passed away.
 ```
 [Rev 21:1](https://www.biblegateway.com/passage/?search=rev+21&version=WEB)
 
-*translated with help of deepl.com* 
+*translated with help of deepl.com*
+
+[More about God](/collections/god.html)
 
 *Any comments or suggestions? Leave an issue or a pull request!*

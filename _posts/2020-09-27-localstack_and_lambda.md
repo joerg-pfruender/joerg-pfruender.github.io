@@ -171,4 +171,6 @@ If you want to have more information about localstack or testcontainers, look at
 ### legal notice
 Amazon AWS and AWS lambda are [trademarks&#8599;](https://aws.amazon.com/trademark-guidelines/) of Amazon.com
 
+[More about Testing](/collections/testautomation.html)
+
 *Any comments or suggestions? Leave an issue or a pull request!*

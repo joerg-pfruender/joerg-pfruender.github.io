@@ -41,8 +41,7 @@ Wir sehen, dass unsere Gesellschaft und unsere Lebensentwürfe zerbrechen in Kli
 
 Besser wäre es, wir würden die Stoppschilder des Lebens respektieren und unser eigenes Leben kritisch reflektieren. Wenn wir erkennen, dass wir mit unseren eigenen Plänen gescheitert sind, dann kann Gott uns einen neuen Weg zeigen.
 
-
-
+[Mehr über Gott](/collections/god.html)
 <a id="English"/>
 
 # English Version
@@ -77,5 +76,9 @@ We can see that our society and our life plans are falling apart because of clim
 
 It would be better if we respected life's stop signs and critically reflected on our own lives.
 When we realise that our own plans are failing, God can show us a new way.
+
+*translated with help of deepl.com*
+
+[More about God](/collections/god.html)
 
 *Any comments or suggestions? Leave an issue or a pull request!*

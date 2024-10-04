@@ -28,6 +28,7 @@ Hier ist nicht Jude noch Grieche, hier ist nicht Sklave noch Freier, hier ist ni
 Vom Wesen her ist die Gleichheit aller Menschen also eine Idee, die aus dem Christentum stammt, nicht aus dem Atheismus.
 Und wenn man genauer hinschaut kann man auch erkennen: Viele der Personen, die an der [Formulierung der Menschenrechte](https://de.wikipedia.org/wiki/Unabh%C3%A4ngigkeitserkl%C3%A4rung_der_Vereinigten_Staaten#Pr%C3%A4ambel) in der Unabhängigkeitserklärung der Vereinigten Staaten beteiligt gewesen sind, waren tief religiöse Menschen.
 
+[Mehr über Gott](/collections/god.html)
 <a id="English"/>
 
 # English Version
@@ -50,4 +51,8 @@ There is neither Jew nor Greek, there is neither slave nor free man, there is ne
 
 In essence, then, the equality of all human beings is an idea that comes from Christianity, not atheism. And if you take a closer look, you can see that too: Many of the people who helped formulate human rights in the American Declaration of Independence were deeply religious people.
 
-Translated with DeepL.com (free version)
+*translated with help of deepl.com*
+
+[More about God](/collections/god.html)
+
+*Any comments or suggestions? Leave an issue or a pull request!*
