@@ -14,27 +14,34 @@ tags: [feedback, team]
 <pre class="mermaid">
 mindmap
     root((Giving Feedback))
-        Steps["`**Nonviolent Communication**
-            1 Observation: indisputable
-            2 Feeling: no accusation
-            3 Needs
-            4 Requests
-            (Marshall Rosenberg)`"]
-        [Mindset]
-            present("**Feedback is a gift**
-            Acceptance of a gift is possible, but not mandatory")
+        Steps["How to criticize"]
+            nonviolent("`**Nonviolent Communication**
+                1 Observation: indisputable
+                2 Feeling: no accusation
+                3 Needs
+                4 Requests
+                (Marshall Rosenberg)`")
+            oscar("`**OSCAR**
+                Observation
+                Situation
+                Consequence
+                Alternative
+                Result`")
+        mindset[Mindset]
+            present("`**Feedback is a gift**
+                        can be accepted or rejected`")
             primeDirective("`“believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand.“
-            Prime Directive of Agile Retrospective`")
+                        Prime Directive of Agile Retrospective`")
             radicalCandor("`**Radical Candor**
-                Be caring AND challenging
-                (Kimm Scott)`")
-        [Setting]
-            meeting("**1:1 conversation**
-                no texting,
-                not in public")
-            bio("**biology**
-                not hungry
-                not tired")
+                            Be caring *and* challenging
+                            (Kim Scott)`")
+        setting[Setting]
+            meeting("`**1:1 conversation**
+                            no texting,
+                            not in public`")
+            bio("`**biology**
+                            not hungry
+                            not tired`")
             noStress("take your time")
             multiRater("360° feedback")
         pos["`positive ≫ negative`"]
@@ -46,10 +53,11 @@ mindmap
 
 ## Resources
 
-* The Prime Directive of Agile Retrospectives: [retrospectivewiki.org](https://retrospectivewiki.org/index.php?title=The_Prime_Directive)
-* Kimm Scott: Radical Candor [kimmalonescott.com](https://kimmalonescott.com/)  [radicalcandor.com](https://www.radicalcandor.com/)
-* Marshall Rosenberg: Nonviolent Communication: [wikipedia.org](https://en.wikipedia.org/wiki/Nonviolent_Communication)
-* Flora, Stephen Ray. (2000). Praise’s magic reinforcement ration: Five to one gets the job done. The Behavior Analyst Today, 1(4), 64-69 [web.archive.org](https://web.archive.org/web/20101229160558/http://www.baojournal.com/BAT%20Journal/VOL-1/BAT-1-4.pdf)
-* 360° feedback: [wikipedia.org](https://en.wikipedia.org/wiki/360-degree_feedback)
-* No resources and no english translation found for "Tratschen in Anwesenheit des Betratschten"
+* The Prime Directive of Agile Retrospectives: [https://retrospectivewiki.org/index.php?title=The_Prime_Directive](https://retrospectivewiki.org/index.php?title=The_Prime_Directive)
+* [Kim Scott](https://kimmalonescott.com/): Radical Candor [radicalcandor.com](https://www.radicalcandor.com/)
+* Marshall Rosenberg: Nonviolent Communication: [https://en.wikipedia.org/wiki/Nonviolent_Communication](https://en.wikipedia.org/wiki/Nonviolent_Communication)
+* Sami Eltamawy: How To Give An Effective Feedback – OSCAR Model [https://www.samieltamawy.com/how-to-give-an-effective-feedback-oscar-model/](https://www.samieltamawy.com/how-to-give-an-effective-feedback-oscar-model/)
+* Flora, Stephen Ray. (2000). Praise’s magic reinforcement ration: Five to one gets the job done. The Behavior Analyst Today, 1(4), 64-69 [https://web.archive.org/web/20101229160558/http://www.baojournal.com/BAT%20Journal/VOL-1/BAT-1-4.pdf](https://web.archive.org/web/20101229160558/http://www.baojournal.com/BAT%20Journal/VOL-1/BAT-1-4.pdf)
+* 360° feedback: [https://en.wikipedia.org/wiki/360-degree_feedback](https://en.wikipedia.org/wiki/360-degree_feedback)
+* No good online resources and no english translation found for "Tratschen in Anwesenheit des Betratschten"
 * My old German post [12 Regeln der Kritik](/team/2016/10/03/Regeln-der-Kritik.html)
