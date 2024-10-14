@@ -22,8 +22,9 @@ Things you wish you didn't need to know about S3
 
 ### AWS SecretsManager
 
+* Terraform and AWS Secrets Manager: Creating Secrets works fine. Deleting secrets seems to succeed, but the secrets are still there hidden in recovery mode. If you want to create it again, you will get an error: "You can't create this secret because a secret with this name is already scheduled for deletion." Now you are stuck. Solution: Go to the management console, manually restore the secret in recovery mode and [ForceDeleteWithoutRecovery](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteSecret.html#API_DeleteSecret_RequestParameters) via aws-cli, see: [https://repost.aws/knowledge-center/delete-secrets-manager-secret](https://repost.aws/knowledge-center/delete-secrets-manager-secret). 
+* [Service Quota](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_limits.html) of 10000 GetSecretValue requests might seem quite generous, but you can quickly reach this limit with a crash-looping service.
 * For reading a secret you do not need only "read-only" privileges but also "secretsmanager:GetSecretValue". Why? Because if you want to see a secret, it does not only read, but also executes a decrypt operation.
-* [Service Quota](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_limits.html) of 10000 GetSecretValue requests might seem quite generous, but you can quickly reach this limit with a crash-looping service. 
 
 ## Microsoft Authenticator
 Microsoft Authenticator overwrites MFA accounts, locking users out
