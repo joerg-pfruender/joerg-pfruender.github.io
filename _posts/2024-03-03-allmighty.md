@@ -34,6 +34,11 @@ in ihm ist vielmehr das Ja Wirklichkeit geworden.
 ```
 [2. Kor 1,19](https://www.bibleserver.com/NG%C3%9C/2.Korinther1%2C19)
 
+```
+Es ist unmöglich, dass Gott lügt.
+```
+[Hebr6, 18](https://www.bibleserver.com/NG%C3%9C/Hebr%C3%A4er6%2C18)
+
 Es mag bestimmt Leute geben, die behaupten: "Gott könnte theoretisch lügen, wenn er es wollte, er tut es halt nicht." Von außen betrachtet ist es das gleiche, ob jemand etwas niemals tut oder es nicht kann. Diskussionen darüber sind lediglich Haarspalterei.
 
 Vermutlich gibt es noch andere Dinge, die Gott nicht kann. Ich vermute, das nach-der-Geographie-Klassenarbeit-Gebet "Bitte lass Stockholm die Hauptstadt von Dänemark gewesen sein." hat nicht sehr viel Aussicht auf Erfolg.
@@ -73,6 +78,12 @@ Jesus: "I am the truth!"
 For the Son of God, Jesus Christ, was not “Yes and no,” but in him is “Yes.”
 ```
 [2 Cor 1:19](https://www.biblegateway.com/passage/?search=2+Corinthians+1&version=WEB)
+
+
+```
+It is impossible for God to lie.
+```
+[Hebr 6:18](https://www.biblegateway.com/passage/?search=Hebrews%206&version=WEB)
 
 There may well be people who say: "God could theoretically lie if he wanted to, but he doesn't." From the outside, it's the same whether someone never does something or can't do it. Discussions about this are just splitting hairs.
 
