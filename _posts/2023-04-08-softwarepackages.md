@@ -14,6 +14,29 @@ tags: [open source software, package managers]
 * Gimp         [https://www.gimp.org/](https://www.gimp.org/)
 * VLC          [https://www.videolan.org/vlc/](https://www.videolan.org/vlc/)
 
+# Linux: apt
+
+## Ubuntu
+
+Ubuntu usually uses the debian package format. But firefox is pre-installed and provided as a snap package.
+On the one hand, you don't need to install it manually. On the other hand, snap-packaging breaks printer integration.
+
+VLC is provided both as a debian package and as a snap package. But the deb package will be left outdated with security issues (unless you register for Ubuntu Pro and [allow Ubuntu to send all your data to chinese government authorities](https://ubuntu.com/legal/ubuntu-pro/personal)).
+
+So installation of the remaining favourite packages is:
+```
+sudo apt install -y thunderbird libreoffice gimp
+sudo snap install vlc
+```
+
+## Raspberry Pi OS
+
+Raspberry Pi OS uses the debian package, too.
+So installing my favourite open-source software goes like this:
+```
+sudo apt install -y firefox-esr thunderbird libreoffice gimp vlc
+```
+
 # Linux: Flatpak
 
 ## 1. Install flatpak
@@ -64,24 +87,23 @@ choco install firefox thunderbird libreoffice gimp vlc
 
 You should update your software regularly.
 
-## Flatpak
+## Linux: Flatpak
 
 ```bash
 flatpak update
 ```
 
-## Ubuntu
+## Linux: apt
 
 ```bash
-sudo apt-get update && sudo apt-get upgrade
-sudo snap refresh
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-
-## Raspberry Pi OS
+## Linux: apt and snap
 
 ```bash
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
+sudo snap refresh
 ```
 
 ## Homebrew
@@ -129,15 +151,16 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------    
     choco upgrade all -y
+    timeout 7
 ```
 Copy this script into a text file and save if as `update.bat` on your desktop. Then for updates, you just need to double-click on the icon.
 
 # more programs
 There are a few more programs, that I recommend:
 
-* Draw.io   (vector graphics)   [https://www.drawio.com/](https://www.drawio.com/)
+* Draw.io (vector graphics)   [https://www.drawio.com/](https://www.drawio.com/)
 * Bitwarden (password manager)  [https://bitwarden.com/](https://bitwarden.com/)
-* Brave (privacy oriented browser) [https://brave.com/](https://brave.com/)
+* Brave (privacy-oriented browser) [https://brave.com/](https://brave.com/)
 * Backup: 
   * Déjà Dup for Linux [https://apps.gnome.org/de/DejaDup/](https://apps.gnome.org/de/DejaDup/) and 
   * FreeFileSync for Windows [https://freefilesync.org/](https://freefilesync.org/), which has [no support for Chocolatey](https://freefilesync.org/forum/viewtopic.php?t=10390)
@@ -145,8 +168,7 @@ There are a few more programs, that I recommend:
   * Create and unpack ZIP archives with 7-zip [https://www.7-zip.org/](https://www.7-zip.org/)
   * Notepad++ Editor [https://notepad-plus-plus.org/](https://notepad-plus-plus.org/)
 
-Although Bitwarden is legally open source software, there's a company that dominates the development process.
-Still in its domain, it is probably one of most mature free software solutions that you can find.
+Although Bitwarden and Brave legally open source software, there are companies that dominate the development process.
 
 Flatpak:
 ```bash
@@ -183,5 +205,8 @@ Howto upgrade packages
 * add Brave browser
 * add backup software
 
+### 2024-12-21
+* document use both apt and Flatpak for linux
+* minor changes
 
 *Any comments or suggestions? Leave an issue or a pull request!*

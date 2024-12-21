@@ -22,8 +22,7 @@ mindmap
                 4 Requests
                 (Marshall Rosenberg)`")
             oscar("`**OSCAR**
-                Observation
-                Situation
+                Observation/Situation: indisputable
                 Consequence
                 Alternative
                 Result`")
@@ -56,6 +55,7 @@ mindmap
 * The Prime Directive of Agile Retrospectives: [https://retrospectivewiki.org/index.php?title=The_Prime_Directive](https://retrospectivewiki.org/index.php?title=The_Prime_Directive)
 * [Kim Scott](https://kimmalonescott.com/): Radical Candor [radicalcandor.com](https://www.radicalcandor.com/)
 * Marshall Rosenberg: Nonviolent Communication: [https://en.wikipedia.org/wiki/Nonviolent_Communication](https://en.wikipedia.org/wiki/Nonviolent_Communication)
+* Comment donner un feedback constructif avec la méthode OSCAR ? [https://www.rolebase.io/blog/comment-donner-un-feedback-constructif-avec-la-methode-oscar](https://www.rolebase.io/blog/comment-donner-un-feedback-constructif-avec-la-methode-oscar)
 * Sami Eltamawy: How To Give An Effective Feedback – OSCAR Model [https://www.samieltamawy.com/how-to-give-an-effective-feedback-oscar-model/](https://www.samieltamawy.com/how-to-give-an-effective-feedback-oscar-model/)
 * Flora, Stephen Ray. (2000). Praise’s magic reinforcement ration: Five to one gets the job done. The Behavior Analyst Today, 1(4), 64-69 [https://web.archive.org/web/20101229160558/http://www.baojournal.com/BAT%20Journal/VOL-1/BAT-1-4.pdf](https://web.archive.org/web/20101229160558/http://www.baojournal.com/BAT%20Journal/VOL-1/BAT-1-4.pdf)
 * 360° feedback: [https://en.wikipedia.org/wiki/360-degree_feedback](https://en.wikipedia.org/wiki/360-degree_feedback)
